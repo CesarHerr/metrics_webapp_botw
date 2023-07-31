@@ -3,7 +3,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root';
 import ErrorPage from './routes/error-page';
 import Home from './components/Home';
-import Details from './components/Details';
+import Creatures from './components/Creatures';
+import Equipment from './components/Equipment';
+import Materials from './components/Materials';
+import Monsters from './components/Monsters';
+import Treasures from './components/Tresures';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +20,24 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/details',
-        element: <Details />,
+        path: '/creatures',
+        element: <Creatures />,
+      },
+      {
+        path: '/equipment',
+        element: <Equipment />,
+      },
+      {
+        path: '/materials',
+        element: <Materials />,
+      },
+      {
+        path: '/monsters',
+        element: <Monsters />,
+      },
+      {
+        path: '/treasures',
+        element: <Treasures />,
       },
     ],
   },
