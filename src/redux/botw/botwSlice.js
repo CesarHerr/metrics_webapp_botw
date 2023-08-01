@@ -1,43 +1,82 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-import { urlAll } from '../../components/Api';
+import { createSlice } from '@reduxjs/toolkit';
+import {
+  fetchMaterials,
+  fetchCreature,
+  fetchEquipment,
+  fetchDetail,
+  fetchMonsters,
+  fetchTreasures,
+} from './Api';
 
 const initialState = {
   isLoading: false,
   cards: [],
   error: undefined,
+  creatures: [],
+  equipment: [],
+  materials: [],
+  monsters: [],
+  detail: [],
+  treasures: [],
+  clickedCardId: null,
 };
-
-const fetchInfo = createAsyncThunk('cards/fetchInfo', async () => {
-  try {
-    const response = await axios.get(urlAll);
-    return response.data.data;
-  } catch (error) {
-    throw error.response;
-  }
-});
 
 const botwSlice = createSlice({
   name: 'cards',
   initialState,
-  reducers: {},
+  reducers: {
+    setClickedCardId: (state, action) => {
+      state.clickedCardId = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchInfo.pending, (state) => {
-        state.isLoading = true;
-        state.error = undefined;
+      .addCase(fetchMaterials.fulfilled, (state, action) => {
+        state.materials = action.payload;
       })
-      .addCase(fetchInfo.fulfilled, (state, action) => {
-        state.isLoading = false;
-        state.cards = action.payload;
-        state.error = undefined;
+      .addCase(fetchCreature.fulfilled, (state, action) => {
+        state.creatures = action.payload;
       })
-      .addCase(fetchInfo.rejected, (state, action) => {
-        state.isLoading = false;
-        state.error = action.error.message;
-      });
+      .addCase(fetchEquipment.fulfilled, (state, action) => {
+        state.equipment = action.payload;
+      })
+      .addCase(fetchDetail.fulfilled, (state, action) => {
+        state.detail = action.payload;
+      })
+      .addCase(fetchMonsters.fulfilled, (state, action) => {
+        state.monsters = action.payload;
+      })
+      .addCase(fetchTreasures.fulfilled, (state, action) => {
+        state.treasures = action.payload;
+      })
+      .addMatcher(
+        (action) => [fetchMaterials.pending, fetchCreature.pending, fetchEquipment.pending,
+          fetchDetail.pending, fetchMonsters.pending, fetchTreasures.pending].includes(action.type),
+        (state) => {
+          state.isLoading = true;
+          state.error = undefined;
+        },
+      )
+      .addMatcher(
+        (action) => [fetchMaterials.fulfilled, fetchCreature.fulfilled, fetchEquipment.fulfilled,
+          fetchDetail.fulfilled, fetchMonsters.fulfilled,
+          fetchTreasures.fulfilled].includes(action.type),
+        (state) => {
+          state.isLoading = false;
+          state.error = undefined;
+        },
+      )
+      .addMatcher(
+        (action) => [fetchMaterials.rejected, fetchCreature.rejected, fetchEquipment.rejected,
+          fetchDetail.rejected, fetchMonsters.rejected,
+          fetchTreasures.rejected].includes(action.type),
+        (state, action) => {
+          state.isLoading = false;
+          state.error = action.error.message;
+        },
+      );
   },
 });
 
-export { fetchInfo };
+export const { setClickedCardId } = botwSlice.actions;
 export default botwSlice.reducer;
