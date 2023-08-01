@@ -1,0 +1,29 @@
+.cards { 
+  height: 100%; 
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.cards img {
+  width: 8rem;
+  border-radius: 0.5rem;  
+}
+
+.cards ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.cards span {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cards:nth-child(odd) {
+  background-color: rgb(78, 120, 204);
+}
+
+.cards ul h3 {
+  width: 100px;
+}

@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import '../styles/Card.css';
 
 function Card({
-  name, image, category, handleClick,
+  name, image, handleClick,
 }) {
   return (
-    <li>
+    <li className="cards">
       <NavLink onClick={handleClick} to="../card_detail">
-        <span style={{ fontSize: '2rem' }}>
-          ▶️ ➡️
+        <span className="material-symbols-outlined">
+          arrow_circle_right
         </span>
         <ul>
           <li>
@@ -18,7 +19,7 @@ function Card({
             <img src={image} alt="descriptive info about" />
           </li>
           <li>
-            <h4>{category}</h4>
+            <h4>Profile</h4>
           </li>
         </ul>
       </NavLink>
@@ -29,7 +30,6 @@ function Card({
 Card.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 
