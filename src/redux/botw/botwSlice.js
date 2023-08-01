@@ -11,7 +11,6 @@ import {
 const initialState = {
   isLoading: false,
   cards: [],
-  error: undefined,
   creatures: [],
   equipment: [],
   materials: [],
@@ -19,6 +18,7 @@ const initialState = {
   detail: [],
   treasures: [],
   clickedCardId: null,
+  error: undefined,
 };
 
 const botwSlice = createSlice({
