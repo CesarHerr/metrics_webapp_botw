@@ -1,52 +1,73 @@
 import { NavLink } from 'react-router-dom';
+import '../styles/Categories.css';
 
 function Categories() {
   return (
-    <ul>
-      <li>
-        <NavLink to="creatures">
-          <article>
-            <span>➡️ ▶️</span>
+    <ul className="categoryList">
+      <li className="creatures">
+
+        <NavLink to="creatures" className="test">
+          <span className="material-symbols-outlined">
+            arrow_circle_right
+          </span>
+          <div>
             <h2>Creatures</h2>
             <h3>82</h3>
-          </article>
+          </div>
         </NavLink>
+
       </li>
-      <li>
+      <li className="equipment">
+
         <NavLink to="equipment">
-          <article>
-            <span>➡️ ▶️</span>
+          <span className="material-symbols-outlined">
+            arrow_circle_right
+          </span>
+          <div>
             <h2>Equipment</h2>
             <h3>184</h3>
-          </article>
+          </div>
         </NavLink>
+
       </li>
-      <li>
+      <li className="materials">
+
         <NavLink to="materials">
-          <article>
-            <span>➡️ ▶️</span>
+          <span className="material-symbols-outlined">
+            arrow_circle_right
+          </span>
+          <div>
             <h2>Materials</h2>
             <h3>80</h3>
-          </article>
+          </div>
         </NavLink>
+
       </li>
-      <li>
+      <li className="monsters">
+
         <NavLink to="monsters">
-          <article>
-            <span>➡️ ▶️</span>
+          <span className="material-symbols-outlined">
+            arrow_circle_right
+          </span>
+          <div>
             <h2>Monsters</h2>
             <h3>80</h3>
-          </article>
+          </div>
         </NavLink>
+
       </li>
-      <li>
+      <li className="treasures">
+
         <NavLink to="treasures">
-          <article>
-            <span>➡️ ▶️</span>
+          <span className="material-symbols-outlined">
+            arrow_circle_right
+          </span>
+          <div>
             <h2>Treasures</h2>
             <h3>3</h3>
-          </article>
+          </div>
         </NavLink>
+
       </li>
     </ul>
   );

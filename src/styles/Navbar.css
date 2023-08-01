@@ -1,5 +1,6 @@
 header {
   background-color: #4268B2;  
+  padding: 0.4rem;
 }
 
 nav {
@@ -9,14 +10,9 @@ nav {
 }
 
 .zeldaIcon  {
-  width: 2rem;
-}
-
-a:active, a:link {
-  text-decoration: none;
+  width: 3rem;
 }
 
 h1 {
   font-size: 1rem;
 }
-
