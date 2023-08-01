@@ -1,0 +1,11 @@
+.creaturesList {
+  background-color: red;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat( 1, 1fr);
+}
+
+.creaturesList h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
