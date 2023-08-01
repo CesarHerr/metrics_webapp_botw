@@ -8,6 +8,7 @@ import Equipment from './components/Equipment';
 import Materials from './components/Materials';
 import Monsters from './components/Monsters';
 import Treasures from './components/Tresures';
+import CardDetails from './components/CardDetails';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: '/treasures',
         element: <Treasures />,
+      },
+      {
+        path: '/card_detail',
+        element: <CardDetails />,
       },
     ],
   },
