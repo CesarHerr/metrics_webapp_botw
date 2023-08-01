@@ -1,8 +1,6 @@
-import CardsList from './CardsList';
-
 function Home() {
   return (
-    <CardsList />
+    <h1>Home</h1>
   );
 }
 
