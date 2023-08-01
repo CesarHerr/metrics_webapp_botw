@@ -1,11 +1,14 @@
 import { NavLink } from 'react-router-dom';
+import zelda from '../images/zeldaicon.png';
+import '../styles/Navbar.css';
 
 function Navbar() {
   return (
     <header>
       <nav>
-        <h1>Api</h1>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">👈</NavLink>
+        <h1>Zelda - Breath of the Wild</h1>
+        <img className="zeldaIcon" src={zelda} alt="zelda icon" />
       </nav>
     </header>
   );
