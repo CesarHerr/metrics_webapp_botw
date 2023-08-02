@@ -27,7 +27,7 @@ function Creatures() {
             key={card.id}
             image={card.image}
             category={card.category}
-            name={card.name}
+            name={card.name[0].toUpperCase() + card.name.substring(1)}
             handleClick={() => handleClick(card.id)}
           />
         ))

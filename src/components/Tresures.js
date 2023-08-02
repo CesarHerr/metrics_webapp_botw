@@ -21,13 +21,14 @@ function Treasures() {
 
   return (
     <ul className="itemsList">
+      <h2>Treasures</h2>
       {treasures
         .map((card) => (
           <Card
             key={card.id}
             image={card.image}
             category={card.category}
-            name={card.name}
+            name={card.name[0].toUpperCase() + card.name.substring(1)}
             handleClick={() => handleClick(card.id)}
           />
         ))

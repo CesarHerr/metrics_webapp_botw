@@ -27,10 +27,23 @@ nav span {
   left: 50vw;
 }
 
-nav a img{
-  width: 0.6rem;
+nav button img{
+  width: 1rem;
   margin-left: 1.2em;
+  transition: all 0.5s ease-in-out;
+}
+
+nav button img:hover {
   rotate: 90deg;
+  transform: scale(1.5);
+}
+
+nav button {
+  background: none;
+  width: 3rem;
+  border: none;
+  cursor: pointer;
+  padding-left: 0.8rem;
 }
 
 h1 {

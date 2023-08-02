@@ -1,7 +1,7 @@
 .cardDetails {
   padding-top: 1rem;
   background-color: rgba(78, 120, 204, 0.897);
-  padding-top: 4rem;
+  padding-top: 5.5rem;
 }
 
 .cardDetails h2 {
@@ -60,10 +60,22 @@
   height: 12vh;
 }
 
+.infoCard p {
+  font-size: 0.8rem;
+}
+
 .heart {
-  width: 15%;
+  width: 10%;
   max-width: 40px;
   position: relative; 
-  left: 75%;  
+  left: 45%;
+  top: -5%;  
   max-height: 100%;
+}
+
+.infoCard li:last-child p {
+  font-size: 0.8rem;
+  position: relative;
+  top: -30px;
+  left: 30px;
 }

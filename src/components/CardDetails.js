@@ -65,8 +65,8 @@ function CardDetails() {
           <p>{detail.properties ? Object.values(detail.properties)[0] : <i>No Attack</i>}</p>
           <h4>
             Defense:
-            <p>{detail.properties ? Object.values(detail.properties)[1] : <i>No Defense</i>}</p>
           </h4>
+          <p>{detail.properties ? Object.values(detail.properties)[1] : <i>No Defense</i>}</p>
         </li>
       </ul>
     </section>
