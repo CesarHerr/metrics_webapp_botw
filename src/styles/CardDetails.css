@@ -1,0 +1,59 @@
+.cardDetails {
+  margin-top: 1rem;
+}
+
+.cardDetails h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cardDetails p, .cardDetails h6 {
+  padding: 0.8rem 0.5rem;
+}
+
+.cardDetails p {
+  font-size: 1.2rem;
+  text-justify:distribute;
+  text-align: center;
+}
+
+.creatureImg {  
+    width: 50%;
+    max-width: 400px;
+    position: relative; 
+    left: 50%; 
+    transform: translate(-50%); 
+    max-height: 100%;
+    border-radius: 0.5rem;
+}
+
+.locations {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+.infoCard {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr); 
+}
+
+.infoCard li {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(29, 29, 116, 0.747);
+  border-radius: 0.5rem;
+  height: 12vh;
+}
+
+.heart {
+  width: 15%;
+  max-width: 40px;
+  position: relative; 
+  left: 75%;  
+  max-height: 100%;
+}
