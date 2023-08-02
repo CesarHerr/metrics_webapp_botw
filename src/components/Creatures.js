@@ -20,7 +20,7 @@ function Creatures() {
 
   return (
     <section className="selectCardSection">
-      <div>
+      <div className="selectCardSection__creatures">
         <span className="material-symbols-outlined">
           arrow_circle_right
         </span>
