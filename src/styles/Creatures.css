@@ -38,6 +38,11 @@
 .selectCardSection__materials {
   background-image: url('../images/materials.png'); 
 }
+
+.selectCardSection__monsters {
+  background-image: url('../images/monsters.png'); 
+}
+
 .itemsList h2 {
   margin-top: 0.4rem;
   font-size: 1.3rem;
