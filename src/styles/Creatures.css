@@ -35,6 +35,9 @@
   background-image: url('../images/creatures.png'); 
 }
 
+.selectCardSection__materials {
+  background-image: url('../images/materials.png'); 
+}
 .itemsList h2 {
   margin-top: 0.4rem;
   font-size: 1.3rem;
