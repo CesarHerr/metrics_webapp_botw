@@ -3,7 +3,29 @@
   place-items: center;
   grid-template-columns: repeat( 1, 1fr);
   background-color: rgba(99, 154, 250, 0.904);
+  margin-top: 31vh;  
+}
+
+.selectCardSection {
   padding-top: 2.8rem;
+}
+
+.selectCardSection div:first-child {
+  height: 31vh;
+  position: relative; 
+  background-image: url('../images/creatures.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(86, 138, 228, 0.897);
+  background-blend-mode:soft-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end; 
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .itemsList h2 {

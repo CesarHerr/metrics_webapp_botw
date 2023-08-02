@@ -19,20 +19,30 @@ function Creatures() {
   };
 
   return (
-    <ul className="itemsList">
-      <h2>Creatures</h2>
-      {creatures
-        .map((card) => (
-          <Card
-            key={card.id}
-            image={card.image}
-            category={card.category}
-            name={card.name[0].toUpperCase() + card.name.substring(1)}
-            handleClick={() => handleClick(card.id)}
-          />
-        ))
-        .slice(0, 100)}
-    </ul>
+    <section className="selectCardSection">
+      <div>
+        <span className="material-symbols-outlined">
+          arrow_circle_right
+        </span>
+        <div>
+          <h2>Creatures</h2>
+          <h3>82</h3>
+        </div>
+      </div>
+      <ul className="itemsList">
+        {creatures
+          .map((card) => (
+            <Card
+              key={card.id}
+              image={card.image}
+              category={card.category}
+              name={card.name[0].toUpperCase() + card.name.substring(1)}
+              handleClick={() => handleClick(card.id)}
+            />
+          ))
+          .slice(0, 100)}
+      </ul>
+    </section>
   );
 }
 

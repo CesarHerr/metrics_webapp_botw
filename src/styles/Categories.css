@@ -51,16 +51,13 @@ background-blend-mode:soft-light;
   background-color: rgba(63, 99, 165, 0.884);
   background-blend-mode:soft-light;
 }
-.categoryList li {
-  
-}
 
 .categoryList li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  height: 200px;
+  height: 31vh;
   padding: 10px;
 }
 
