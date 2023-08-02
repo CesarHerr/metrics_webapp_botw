@@ -43,6 +43,10 @@
   background-image: url('../images/monsters.png'); 
 }
 
+.selectCardSection__treasures {
+  background-image: url('../images/treasure.png'); 
+}
+
 .itemsList h2 {
   margin-top: 0.4rem;
   font-size: 1.3rem;

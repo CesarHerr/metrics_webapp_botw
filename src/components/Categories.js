@@ -64,7 +64,7 @@ function Categories() {
           </span>
           <div>
             <h2>Treasures</h2>
-            <h3>3</h3>
+            <h3>4</h3>
           </div>
         </NavLink>
 

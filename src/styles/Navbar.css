@@ -30,7 +30,7 @@ nav span {
 nav button img{
   width: 0.8rem;
   margin-left: 1.2em;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 nav button img:hover {
