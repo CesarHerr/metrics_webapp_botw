@@ -3,10 +3,11 @@
   place-items: center;
   grid-template-columns: repeat( 1, 1fr);
   background-color: rgba(99, 154, 250, 0.904);
-  padding-top: 5rem;
+  padding-top: 2.8rem;
 }
 
 .itemsList h2 {
-  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  font-size: 1.3rem;
   text-align: center;
 }

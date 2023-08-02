@@ -13,7 +13,7 @@ nav {
 }
 
 .zeldaIcon  {
-  width: 3rem;
+  width: 2rem;
 }
 
 h1 {
@@ -28,7 +28,7 @@ nav span {
 }
 
 nav button img{
-  width: 1rem;
+  width: 0.8rem;
   margin-left: 1.2em;
   transition: all 0.5s ease-in-out;
 }
@@ -48,4 +48,15 @@ nav button {
 
 h1 {
   font-size: 1.2rem;
+}
+
+.titleNav p {
+  font-size: 0.5rem;
+  bottom: -10px;
+  position: relative;
+  left: 5px;
+}
+
+header nav a {
+  display: flex;
 }
