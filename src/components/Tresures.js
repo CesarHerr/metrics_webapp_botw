@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { fetchTreasures } from '../redux/botw/Api';
 import { setClickedCardId } from '../redux/botw/botwSlice';
 import Card from './Card';
+import '../styles/Creatures.css';
 
 function Treasures() {
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ function Treasures() {
   };
 
   return (
-    <ul style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <ul className="itemsList">
       {treasures
         .map((card) => (
           <Card

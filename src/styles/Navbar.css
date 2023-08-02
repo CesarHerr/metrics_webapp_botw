@@ -1,6 +1,9 @@
 header {
   background-color: #4268B2;  
   padding: 0.4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav {
@@ -15,4 +18,21 @@ nav {
 
 h1 {
   font-size: 1rem;
+}
+
+nav span {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 3rem;
+  left: 50vw;
+}
+
+nav a img{
+  width: 0.6rem;
+  margin-left: 1.2em;
+  rotate: 90deg;
+}
+
+h1 {
+  font-size: 1.2rem;
 }

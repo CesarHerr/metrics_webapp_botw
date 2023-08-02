@@ -19,7 +19,7 @@ function Monsters() {
   };
 
   return (
-    <ul style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <ul className="itemsList">
       {monsters
         .map((card) => (
           <Card

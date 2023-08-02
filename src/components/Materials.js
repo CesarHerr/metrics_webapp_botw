@@ -19,7 +19,7 @@ function Materials() {
   };
 
   return (
-    <ul style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <ul className="itemsList">
       {materials
         .map((card) => (
           <Card

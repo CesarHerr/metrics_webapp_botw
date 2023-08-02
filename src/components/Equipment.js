@@ -19,7 +19,7 @@ function Equipment() {
   };
 
   return (
-    <ul style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <ul className="itemsList">
       {equipment
         .map((card) => (
           <Card

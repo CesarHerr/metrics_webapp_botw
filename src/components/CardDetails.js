@@ -28,44 +28,44 @@ function CardDetails() {
         <h3>
           Common Locations:
         </h3>
-        <h3>
+        <p>
           {detail.common_locations
             ? ` ${detail.common_locations.join(', ')[0].toUpperCase()}${detail.common_locations.join(', ').substring(1)}`
             : 'Unknown'}
-        </h3>
+        </p>
       </span>
       <ul className="infoCard">
-        <li>
 
+        <li>
           <h4> Power: </h4>
-          <h5>{detail.id}</h5>
+          <p>{detail.id}</p>
         </li>
+
         <li>
           <h4>Hearts recovered:</h4>
-          <h5>{detail.hearts_recovered || <i>No recover</i>}</h5>
+          <p>{detail.hearts_recovered || <i>No recover</i>}</p>
           <img className="heart" src={heart} alt="heart" />
         </li>
+
         <li>
           <h4>Drops:</h4>
-          <h5>{detail.drops ? detail.drops.join(', ')[0].toUpperCase() + detail.drops.join(', ') : <i>No drops</i> }</h5>
+          <p>{detail.drops ? detail.drops.join(', ')[0].toUpperCase() + detail.drops.join(', ').substring(1) : <i>No drops</i> }</p>
 
         </li>
         <li>
           <h4>
             Cooking effect:
-            {detail.cooking_effect || <h5><i>No effect</i></h5>}
           </h4>
+          <p>{detail.cooking_effect || <i>No effect</i>}</p>
         </li>
         <li>
           <h4>
             Attack:
-            {' '}
-            {detail.properties ? Object.values(detail.properties)[0] : <h5><i>No Attack</i></h5>}
           </h4>
+          <p>{detail.properties ? Object.values(detail.properties)[0] : <i>No Attack</i>}</p>
           <h4>
             Defense:
-            {' '}
-            {detail.properties ? Object.values(detail.properties)[1] : <h5><i>No Defense</i></h5>}
+            <p>{detail.properties ? Object.values(detail.properties)[1] : <i>No Defense</i>}</p>
           </h4>
         </li>
       </ul>

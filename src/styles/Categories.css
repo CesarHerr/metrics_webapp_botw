@@ -1,6 +1,9 @@
 .categoryList {
   display: grid;
-  grid-template-columns: repeat( 2, 1fr); 
+  grid-template-columns: repeat( 2, 1fr);
+  height: 90vh;
+  background-color: rgba(86, 138, 228, 0.671);
+  padding-top: 3.8rem;
 }
 
 .creatures {
@@ -9,7 +12,7 @@
   background-image: url('../images/creatures.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgb(86,137,228);
+  background-color: rgba(86, 138, 228, 0.897);
   background-blend-mode:soft-light;
 }
 
@@ -18,7 +21,7 @@
     background-image: url('../images/equipment.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(63,98,165);
+    background-color: rgba(63, 99, 165, 0.897);
     background-blend-mode:soft-light;  
 }
 
@@ -27,7 +30,7 @@
 background-image: url('../images/materials.png');
 background-position: center;
 background-repeat: no-repeat;
-background-color: rgb(78, 120, 204);
+background-color: rgba(78, 120, 204, 0.897);
 background-blend-mode:soft-light;  
 }
 
@@ -36,7 +39,7 @@ background-blend-mode:soft-light;
   background-image: url('../images/monsters.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgb(78, 120, 204);
+  background-color: rgba(78, 120, 204, 0.897);
   background-blend-mode:soft-light;
 }
 
@@ -45,7 +48,7 @@ background-blend-mode:soft-light;
   background-image: url('../images/treasure.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgb(63,98,165);
+  background-color: rgba(63, 99, 165, 0.884);
   background-blend-mode:soft-light;
 }
 .categoryList li {
