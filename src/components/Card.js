@@ -16,7 +16,7 @@ function Card({
             <h3>{name}</h3>
           </li>
           <li>
-            <img src={image} alt="descriptive info about" />
+            <img src={image} alt={name} />
           </li>
           <li>
             <h4>Profile</h4>

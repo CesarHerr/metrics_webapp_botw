@@ -39,8 +39,7 @@ function Creatures() {
               name={card.name[0].toUpperCase() + card.name.substring(1)}
               handleClick={() => handleClick(card.id)}
             />
-          ))
-          .slice(0, 100)}
+          ))}
       </ul>
     </section>
   );
