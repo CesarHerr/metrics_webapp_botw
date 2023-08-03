@@ -1,8 +1,6 @@
-import botwReducer from '../redux/botw/botwSlice';
-import { setClickedCardId } from '../redux/botw/botwSlice';
+import botwReducer, { setClickedCardId } from '../redux/botw/botwSlice';
 
 describe('botwSlice reducer', () => {
-
   it('should return the initial state', () => {
     expect(botwReducer(undefined, {})).toEqual({
       isLoading: false,

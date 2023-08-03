@@ -1,14 +1,14 @@
 import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react';
-import Navbar from '../components/Navbar';
 import { MemoryRouter } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 describe('Categories', () => {
   it('Renders Categories component', () => {
     const nav = render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(nav.container).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe('Categories', () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const element = screen.getByText('Zelda - Botw');

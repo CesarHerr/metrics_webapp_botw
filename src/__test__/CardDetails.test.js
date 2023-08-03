@@ -3,8 +3,8 @@ import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
-import CardDetails from '../components/CardDetails';
 import thunk from 'redux-thunk';
+import CardDetails from '../components/CardDetails';
 
 const mockStore = configureStore([thunk]);
 
@@ -19,7 +19,7 @@ describe('Card details render test', () => {
           category: 'details',
           image: '../images/triforce.png',
           description: 'description 1',
-          common_locations: ["location 1"],
+          common_locations: ['location 1'],
           properties: { property: 0 },
         },
       },

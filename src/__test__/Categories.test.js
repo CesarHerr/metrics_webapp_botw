@@ -1,14 +1,14 @@
 import '@testing-library/jest-dom';
 import { screen, render } from '@testing-library/react';
-import Categories from '../components/Categories';
 import { MemoryRouter } from 'react-router-dom';
+import Categories from '../components/Categories';
 
 describe('Categories', () => {
   it('Renders Categories component', () => {
     const nav = render(
       <MemoryRouter>
         <Categories />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(nav.container).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe('Categories', () => {
     render(
       <MemoryRouter>
         <Categories />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const element = screen.getByText('Creatures');
