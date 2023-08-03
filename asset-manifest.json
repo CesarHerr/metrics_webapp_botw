@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/metrics_webapp_botw/static/css/main.15baf6df.css",
-    "main.js": "/metrics_webapp_botw/static/js/main.f4869e0b.js",
+    "main.js": "/metrics_webapp_botw/static/js/main.f58fade9.js",
     "static/media/triforce.png": "/metrics_webapp_botw/static/media/triforce.5bcfd057069264ad8477.png",
     "static/media/heart.png": "/metrics_webapp_botw/static/media/heart.cf25528265b8a1d3588c.png",
     "static/media/zeldaicon.png": "/metrics_webapp_botw/static/media/zeldaicon.ea6b9a6ccab09f2c9288.png",
     "static/media/masterSword4.png": "/metrics_webapp_botw/static/media/masterSword4.a7ada87f06c8b200c393.png",
     "index.html": "/metrics_webapp_botw/index.html",
     "main.15baf6df.css.map": "/metrics_webapp_botw/static/css/main.15baf6df.css.map",
-    "main.f4869e0b.js.map": "/metrics_webapp_botw/static/js/main.f4869e0b.js.map"
+    "main.f58fade9.js.map": "/metrics_webapp_botw/static/js/main.f58fade9.js.map"
   },
   "entrypoints": [
     "static/css/main.15baf6df.css",
-    "static/js/main.f4869e0b.js"
+    "static/js/main.f58fade9.js"
   ]
 }
