@@ -73,12 +73,14 @@ This web application is a Single Page Application (SPA) serving as an encycloped
 <!-- LIVE DEMO -->
 
 
+[BotwCapstone.webm](https://github.com/CesarHerr/metrics_webapp_botw/assets/111262493/cccc26b3-5b03-46f2-b453-a20b7d67bf91)
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can see the live demo of this project: [click here](https:)
+> You can see the live demo of this project: [click here](https://zeldabreathofthewildencyclopedia.onrender.com)
 
+> You can see a video description here : [click here](https://www.loom.com/share/aa1d45f02b7b4d52b2dc7e77c339b6fc?sid=29300449-198a-4ab8-aee1-3d02af7ae60e)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
