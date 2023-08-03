@@ -1,5 +1,5 @@
 header {
-  background-color: #4268B2;  
+  background-color: #4268b2;
   padding: 0.4rem;
   position: fixed;
   width: 100%;
@@ -12,12 +12,12 @@ nav {
   align-items: center;
 }
 
-.zeldaIcon  {
+.zeldaIcon {
   width: 2rem;
 }
 
 h1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 nav span {
@@ -27,7 +27,7 @@ nav span {
   left: 50vw;
 }
 
-nav button img{
+nav button img {
   width: 0.8rem;
   margin-left: 1.2em;
   transition: all 0.3s ease-in-out;
@@ -44,10 +44,6 @@ nav button {
   border: none;
   cursor: pointer;
   padding-left: 0.8rem;
-}
-
-h1 {
-  font-size: 1.2rem;
 }
 
 .titleNav p {

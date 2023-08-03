@@ -1,9 +1,9 @@
 .itemsList {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat( 1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   background-color: rgba(99, 154, 250, 0.904);
-  margin-top: 31vh;  
+  margin-top: 31vh;
 }
 
 .selectCardSection {
@@ -12,39 +12,38 @@
 
 .selectCardSection div:first-child {
   height: 31vh;
-  position: relative; 
-  background-color: rgba(86, 138, 228, 0.897);  
+  background-color: rgba(86, 138, 228, 0.897);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end; 
+  align-items: flex-end;
   padding: 10px;
   position: fixed;
   width: 100%;
   z-index: 100;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode:soft-light;
+  background-blend-mode: soft-light;
 }
 
-.selectCardSection__equipment  {
+.selectCardSection__equipment {
   background-image: url('../images/equipment.png');
-  }
+}
 
 .selectCardSection__creatures {
-  background-image: url('../images/creatures.png'); 
+  background-image: url('../images/creatures.png');
 }
 
 .selectCardSection__materials {
-  background-image: url('../images/materials.png'); 
+  background-image: url('../images/materials.png');
 }
 
 .selectCardSection__monsters {
-  background-image: url('../images/monsters.png'); 
+  background-image: url('../images/monsters.png');
 }
 
 .selectCardSection__treasures {
-  background-image: url('../images/treasure.png'); 
+  background-image: url('../images/treasure.png');
 }
 
 .itemsList h2 {

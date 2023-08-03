@@ -1,4 +1,4 @@
-* {  
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/triforce.png');
-  background-size:contain;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,7 +20,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
 }
 
@@ -28,6 +33,7 @@ li {
   list-style: none;
 }
 
-a:active, a:link {
+a:active,
+a:link {
   text-decoration: none;
 }
