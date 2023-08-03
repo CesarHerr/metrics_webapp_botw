@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories Renders Categories component 1`] = `
+<div>
+  <header>
+    <nav>
+      <button
+        class="nav-button"
+        type="button"
+      >
+        <img
+          alt="master sword"
+          src="masterSword4.png"
+        />
+      </button>
+      <a
+        aria-current="page"
+        class="titleNav active"
+        href="/"
+      >
+        <h1>
+          Zelda - Botw
+        </h1>
+        <p>
+           📚Encyclopedia
+        </p>
+      </a>
+      <img
+        alt="zelda icon"
+        class="zeldaIcon"
+        src="zeldaicon.png"
+      />
+    </nav>
+  </header>
+</div>
+`;

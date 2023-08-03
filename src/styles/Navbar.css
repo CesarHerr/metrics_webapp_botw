@@ -1,0 +1,58 @@
+header {
+  background-color: #4268b2;
+  padding: 0.4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zeldaIcon {
+  width: 2rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+nav span {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 3rem;
+  left: 50vw;
+}
+
+nav button img {
+  width: 0.8rem;
+  margin-left: 1.2em;
+  transition: all 0.3s ease-in-out;
+}
+
+nav button img:hover {
+  rotate: 90deg;
+  transform: scale(1.5);
+}
+
+nav button {
+  background: none;
+  width: 3rem;
+  border: none;
+  cursor: pointer;
+  padding-left: 0.8rem;
+}
+
+.titleNav p {
+  font-size: 0.5rem;
+  bottom: -10px;
+  position: relative;
+  left: 5px;
+}
+
+header nav a {
+  display: flex;
+}

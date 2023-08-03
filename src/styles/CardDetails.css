@@ -1,0 +1,84 @@
+.cardDetails {
+  background-color: rgba(78, 120, 204, 0.897);
+  padding-top: 5.5rem;
+}
+
+.cardDetails h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cardDetails p,
+.cardDetails h6 {
+  padding: 0.8rem 0.5rem;
+}
+
+.cardDetails p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.creatureImg {
+  width: 50%;
+  max-width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-height: 100%;
+  border-radius: 4rem 0.4rem;
+  box-shadow: 16px 13px 14px -2px rgba(37, 49, 128, 0.75);
+  -webkit-box-shadow: 16px 13px 14px -2px rgba(37, 49, 128, 0.75);
+  -moz-box-shadow: 16px 13px 14px -2px rgba(37, 49, 128, 0.75);
+}
+
+.locations {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+.locations p {
+  font-size: 0.9rem;
+  margin-top: -12px;
+}
+
+.infoCard {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.infoCard li {
+  margin: 0.2rem;
+  padding: 0.4rem;
+  border: 2px solid rgba(51, 51, 231, 0.493);
+  border-radius: 0.5rem;
+  height: 12vh;
+}
+
+.infoCard p {
+  font-size: 0.8rem;
+}
+
+.heart {
+  width: 10%;
+  max-width: 40px;
+  position: relative;
+  left: 45%;
+  top: -5%;
+  max-height: 100%;
+}
+
+.infoCard li:last-child h4:nth-of-type(2) {
+  margin-top: -1rem;
+}
+
+.infoCard li:last-child p {
+  font-size: 0.8rem;
+  position: relative;
+  top: -30px;
+  left: 30px;
+}
