@@ -6,7 +6,7 @@ import Creatures from './components/Creatures';
 import Equipment from './components/Equipment';
 import Materials from './components/Materials';
 import Monsters from './components/Monsters';
-import Treasures from './components/Tresures';
+import Treasures from './components/Treasures';
 import CardDetails from './components/CardDetails';
 import Categories from './components/Categories';
 

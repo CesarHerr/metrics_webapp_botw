@@ -33,9 +33,9 @@ describe('Materials render test', () => {
   test('renders materials list correctly', () => {
     render(
       <Provider store={store}>
-        <MemoryRouter> 
+        <MemoryRouter>
           <Materials />
-        </MemoryRouter> 
+        </MemoryRouter>
       </Provider>,
     );
 
@@ -43,8 +43,8 @@ describe('Materials render test', () => {
     expect(screen.getByText('Materials 2')).toBeInTheDocument();
     expect(screen.getByText('Materials')).toBeInTheDocument();
 
-    const image1 = screen.getByAltText("Materials 1");
-    const image2 = screen.getByAltText("Materials 2");
+    const image1 = screen.getByAltText('Materials 1');
+    const image2 = screen.getByAltText('Materials 2');
 
     expect(image1).toBeInTheDocument();
     expect(image2).toBeInTheDocument();

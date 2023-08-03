@@ -33,9 +33,9 @@ describe('Monsters render test', () => {
   test('renders monsters list correctly', () => {
     render(
       <Provider store={store}>
-        <MemoryRouter> 
+        <MemoryRouter>
           <Monsters />
-        </MemoryRouter> 
+        </MemoryRouter>
       </Provider>,
     );
 
@@ -43,8 +43,8 @@ describe('Monsters render test', () => {
     expect(screen.getByText('Monsters 2')).toBeInTheDocument();
     expect(screen.getByText('Monsters')).toBeInTheDocument();
 
-    const image1 = screen.getByAltText("Monsters 1");
-    const image2 = screen.getByAltText("Monsters 2");
+    const image1 = screen.getByAltText('Monsters 1');
+    const image2 = screen.getByAltText('Monsters 2');
 
     expect(image1).toBeInTheDocument();
     expect(image2).toBeInTheDocument();
