@@ -177,7 +177,7 @@ If you like this project, give it a ⭐️!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Microverse for giving us the opportunity to learn and grow as developers and also we like to thank our families, they are all our support. 🌟
+I would like to thank  [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for the design, Microverse for giving us the opportunity to learn and grow as developers and also we like to thank our families, they are all our support. 🌟
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
