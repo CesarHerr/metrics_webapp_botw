@@ -23,7 +23,7 @@ function CardDetails() {
         {detail.category}
       </h6>
       <p>{detail.description}</p>
-      <img className="creatureImg" src={detail.image} alt="creature detail" />
+      <img className="creatureImg" src={detail.image} alt={`${detail.name} card`} />
       <span className="locations">
         <h3>
           Common Locations:
