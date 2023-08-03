@@ -17,7 +17,7 @@ function Navbar() {
         <button type="button" onClick={handleGoBack} className="nav-button">
           <img src={sword} alt="master sword" />
         </button>
-        <NavLink className="titleNav" to="/">
+        <NavLink className="titleNav" to="metrics_webapp_botw/">
           <h1>
             Zelda - Botw
           </h1>

@@ -4,9 +4,18 @@ export default function ErrorPage() {
   const error = useRouteError();
 
   return (
-    <div id="error-page">
+    <div
+      id="error-page"
+      style={{
+        display: 'grid',
+        placeContent: 'center',
+        marginTop: '2rem',
+        fontSize: '1.5rem',
+        textAlign: 'center',
+      }}
+    >
       <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <img src="https://http.cat/404" alt="Not found!" />
       <p>
         <i>{error.statusText || error.message}</i>
       </p>

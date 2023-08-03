@@ -21,23 +21,23 @@ const router = createBrowserRouter([
         element: <Categories />,
       },
       {
-        path: '/creatures',
+        path: 'metrics_webapp_botw/creatures',
         element: <Creatures />,
       },
       {
-        path: '/equipment',
+        path: 'metrics_webapp_botw/equipment',
         element: <Equipment />,
       },
       {
-        path: '/materials',
+        path: 'metrics_webapp_botw/materials',
         element: <Materials />,
       },
       {
-        path: '/monsters',
+        path: 'metrics_webapp_botw/monsters',
         element: <Monsters />,
       },
       {
-        path: '/treasures',
+        path: 'metrics_webapp_botw/treasures',
         element: <Treasures />,
       },
       {
