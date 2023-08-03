@@ -78,7 +78,7 @@ This web application is a Single Page Application (SPA) serving as an encycloped
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can see the live demo of this project: [click here](https://zeldabreathofthewildencyclopedia.onrender.com)
+> You can see the live demo of this project: [click here](https://cesarherr.github.io/metrics_webapp_botw/)
 
 > You can see a video description here : [click here](https://www.loom.com/share/aa1d45f02b7b4d52b2dc7e77c339b6fc?sid=29300449-198a-4ab8-aee1-3d02af7ae60e)
 
