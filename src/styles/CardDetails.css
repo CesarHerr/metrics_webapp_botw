@@ -76,9 +76,13 @@
   margin-top: -1rem;
 }
 
+.infoCard li p {
+  margin-top: -0.5rem;
+}
+
 .infoCard li:last-child p {
   font-size: 0.8rem;
   position: relative;
-  top: -30px;
+  top: -20px;
   left: 30px;
 }
