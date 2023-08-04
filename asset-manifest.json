@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/metrics_webapp_botw/static/css/main.d3027d62.css",
+    "main.css": "/metrics_webapp_botw/static/css/main.59b8c678.css",
     "main.js": "/metrics_webapp_botw/static/js/main.f9594df4.js",
     "static/media/search.png": "/metrics_webapp_botw/static/media/search.8725d83f699f4357e534.png",
     "static/media/triforce.png": "/metrics_webapp_botw/static/media/triforce.5bcfd057069264ad8477.png",
@@ -9,11 +9,11 @@
     "static/media/masterSword4.png": "/metrics_webapp_botw/static/media/masterSword4.a7ada87f06c8b200c393.png",
     "static/media/HyliaSerifBeta-Regular.otf": "/metrics_webapp_botw/static/media/HyliaSerifBeta-Regular.587194a6240d0f662864.otf",
     "index.html": "/metrics_webapp_botw/index.html",
-    "main.d3027d62.css.map": "/metrics_webapp_botw/static/css/main.d3027d62.css.map",
+    "main.59b8c678.css.map": "/metrics_webapp_botw/static/css/main.59b8c678.css.map",
     "main.f9594df4.js.map": "/metrics_webapp_botw/static/js/main.f9594df4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3027d62.css",
+    "static/css/main.59b8c678.css",
     "static/js/main.f9594df4.js"
   ]
 }
