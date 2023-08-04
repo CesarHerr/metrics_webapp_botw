@@ -17,8 +17,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/triforce.png');
-  background-size: contain;
-  background-position: center;
+  background-size: 80%;
+  background-position:center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 100%;

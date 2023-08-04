@@ -43,6 +43,11 @@
   background-color: rgba(9, 138, 47, 0.945);
 }
 
+.cards:nth-child(even) {
+  background-color: rgba(17, 180, 66, 0.945);
+}
+
+
 .cards ul h4 {
   width: 20vw;
   font-size: 1rem;

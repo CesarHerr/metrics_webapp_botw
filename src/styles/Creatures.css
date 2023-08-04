@@ -2,7 +2,6 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(1, 1fr);
-  background-color: rgba(17, 180, 66, 0.945);
   margin-top: 31vh;
 }
 
@@ -23,7 +22,7 @@
   z-index: 100;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: darken;
+  background-blend-mode:hard-light;
 }
 
 .selectCardSection__equipment {
