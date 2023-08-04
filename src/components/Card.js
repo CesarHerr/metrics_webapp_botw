@@ -12,13 +12,13 @@ function Card({ name, image, handleClick }) {
         </span>
         <ul>
           <li>
-            <h3>{name}</h3>
+            <h4>{name}</h4>
           </li>
           <li>
             <img src={image} alt={name} />
           </li>
           <li>
-            <h4>Profile</h4>
+            <h5>Profile</h5>
           </li>
         </ul>
       </NavLink>

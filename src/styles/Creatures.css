@@ -2,7 +2,7 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(1, 1fr);
-  background-color: rgba(99, 154, 250, 0.904);
+  background-color: rgba(17, 180, 66, 0.945);
   margin-top: 31vh;
 }
 
@@ -12,7 +12,7 @@
 
 .selectCardSection div:first-child {
   height: 31vh;
-  background-color: rgba(86, 138, 228, 0.897);
+  background-color: rgba(17, 196, 70, 0.945);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,7 +23,7 @@
   z-index: 100;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: soft-light;
+  background-blend-mode: darken;
 }
 
 .selectCardSection__equipment {

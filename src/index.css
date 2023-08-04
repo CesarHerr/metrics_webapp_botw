@@ -5,10 +5,15 @@
   color: #fff;
 }
 
+@font-face {
+  font-family: "Hylia Serif";
+  src: url("../src/font/HyliaSerifBeta-Regular.otf");
+}
+
 body {
-  background-color: rgba(99, 154, 250, 0.904);
+  background-color: rgba(26, 228, 87, 0.904);
   margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Hylia Serif', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/triforce.png');
