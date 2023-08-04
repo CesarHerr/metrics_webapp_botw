@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import '../styles/Card.css';
+import truth from '../images/search.png';
 
-function Card({
-  name, image, handleClick,
-}) {
+function Card({ name, image, handleClick }) {
   return (
     <li className="cards">
       <NavLink onClick={handleClick} to="../card_detail">
-        <span className="material-symbols-outlined">
-          arrow_circle_right
+        <span className="truth">
+          <img src={truth} alt="length of truth" />
         </span>
         <ul>
           <li>

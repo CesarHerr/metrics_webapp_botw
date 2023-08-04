@@ -16,6 +16,10 @@
   background-blend-mode: soft-light;
 }
 
+.truth img{
+  width: 2rem;
+}
+
 .equipment {
   position: relative;
   background-image: url('../images/equipment.png');

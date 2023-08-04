@@ -21,13 +21,8 @@ function Materials() {
   return (
     <section className="selectCardSection">
       <div className="selectCardSection__materials">
-        <span className="material-symbols-outlined">
-          arrow_circle_right
-        </span>
-        <div>
-          <h2>Materials</h2>
-          <h3>82</h3>
-        </div>
+        <h2>Materials</h2>
+        <h3>82</h3>
       </div>
       <ul className="itemsList">
         {materials

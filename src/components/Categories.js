@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Categories.css';
+import truth from '../images/search.png';
 
 function Categories() {
   return (
@@ -7,8 +8,8 @@ function Categories() {
       <li className="creatures">
 
         <NavLink to="creatures" className="test">
-          <span className="material-symbols-outlined">
-            arrow_circle_right
+          <span className="truth">
+            <img src={truth} alt="length of truth" />
           </span>
           <div>
             <h2>Creatures</h2>
@@ -20,8 +21,8 @@ function Categories() {
       <li className="equipment">
 
         <NavLink to="equipment">
-          <span className="material-symbols-outlined">
-            arrow_circle_right
+          <span className="truth">
+            <img src={truth} alt="length of truth" />
           </span>
           <div>
             <h2>Equipment</h2>
@@ -33,8 +34,8 @@ function Categories() {
       <li className="materials">
 
         <NavLink to="materials">
-          <span className="material-symbols-outlined">
-            arrow_circle_right
+          <span className="truth">
+            <img src={truth} alt="length of truth" />
           </span>
           <div>
             <h2>Materials</h2>
@@ -46,8 +47,8 @@ function Categories() {
       <li className="monsters">
 
         <NavLink to="monsters">
-          <span className="material-symbols-outlined">
-            arrow_circle_right
+          <span className="truth">
+            <img src={truth} alt="length of truth" />
           </span>
           <div>
             <h2>Monsters</h2>
@@ -59,8 +60,8 @@ function Categories() {
       <li className="treasures">
 
         <NavLink to="treasures">
-          <span className="material-symbols-outlined">
-            arrow_circle_right
+          <span className="truth">
+            <img src={truth} alt="length of truth" />
           </span>
           <div>
             <h2>Treasures</h2>
