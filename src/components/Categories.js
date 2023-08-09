@@ -1,17 +1,19 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/Categories.css';
 import truth from '../images/search.png';
+import cursor from '../images/whiteIcon.png';
 
 function Categories() {
   return (
     <ul className="categoryList">
       <li className="creatures">
 
-        <NavLink to="creatures" className="test">
+        <NavLink to="creatures">
           <span className="truth">
             <img src={truth} alt="length of truth" />
           </span>
           <div>
+            <img className="creatures__arrowIcon" src={cursor} alt="white cursor" />
             <h2>Creatures</h2>
             <h3>82</h3>
           </div>
@@ -25,6 +27,7 @@ function Categories() {
             <img src={truth} alt="length of truth" />
           </span>
           <div>
+            <img className="creatures__arrowIcon" src={cursor} alt="white cursor" />
             <h2>Equipment</h2>
             <h3>184</h3>
           </div>
@@ -38,6 +41,7 @@ function Categories() {
             <img src={truth} alt="length of truth" />
           </span>
           <div>
+            <img className="creatures__arrowIcon" src={cursor} alt="white cursor" />
             <h2>Materials</h2>
             <h3>80</h3>
           </div>
@@ -51,6 +55,7 @@ function Categories() {
             <img src={truth} alt="length of truth" />
           </span>
           <div>
+            <img className="creatures__arrowIcon" src={cursor} alt="white cursor" />
             <h2>Monsters</h2>
             <h3>80</h3>
           </div>
@@ -64,6 +69,7 @@ function Categories() {
             <img src={truth} alt="length of truth" />
           </span>
           <div>
+            <img className="creatures__arrowIcon" src={cursor} alt="white cursor" />
             <h2>Treasures</h2>
             <h3>4</h3>
           </div>
