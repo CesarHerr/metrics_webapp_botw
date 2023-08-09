@@ -12,19 +12,16 @@ nav {
   align-items: center;
 }
 
-.zeldaIcon {
+.titleNav_zeldaIconMobile {
   width: 2rem;
+}
+
+.titleNav__zeldaIconDesktop {
+  display: none;
 }
 
 h1 {
   font-size: 1.2rem;
-}
-
-nav span {
-  font-size: 0.6rem;
-  position: absolute;
-  top: 3rem;
-  left: 50vw;
 }
 
 nav button img {
@@ -55,4 +52,46 @@ nav button {
 
 header nav a {
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-color: transparent;
+    padding: 0.4rem;
+    position: relative; 
+    z-index: 1;
+  }
+  
+  nav {
+    justify-content: center;
+  }
+  
+  .titleNav_zeldaIconMobile {
+    display: none;
+  }
+
+  .titleNav__zeldaIconDesktop {
+    display: inline;
+    width: 60%;
+  }
+
+  .titleNav p {
+    font-size: 1.5rem;
+    bottom: -280px;
+    color: #a08852;
+    position: relative;
+    left: 5px;
+  }
+  
+  h1 {  
+    display: none;  
+  } 
+  
+  nav button img {
+    display:none;
+  }
+  
+  nav button img:active {
+  margin-left: 1rem;
+  }
 }
