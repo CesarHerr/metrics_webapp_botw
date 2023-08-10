@@ -50,3 +50,143 @@
   font-size: 1.3rem;
   text-align: center;
 }
+
+.selectCardSection__masterSword {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .infoMenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    width: 95%;
+    top:2rem;
+    left:2.5%;
+    z-index: 99;
+    height: 95%;
+  }
+
+  .infoMenu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(126, 117, 117, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  
+  .selectCardSection__masterSword {
+    display: inline;
+    width: 3rem;
+    transition: all 0.4s ease-in-out;
+    rotate: 90deg;
+    animation: spin2 2s linear infinite; 
+  }
+
+  .selectCardSection button {
+    background: none;
+    border: none;
+  }
+
+  .selectCardSection__masterSword:hover {
+    cursor: pointer; 
+  }
+
+  @keyframes spin2 {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  .selectCardSection__masterSword:active {
+    margin: -2rem;
+  }
+
+  .itemsList {
+    display: flex;
+    flex-wrap: wrap;  
+    margin: 0; 
+    overflow:auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #aaa #ddd;
+    z-index: 103;
+    
+  }
+
+  hr {
+    width: 40%;
+    height: 3px;
+    background-color: #ffffffbb;
+    margin-left: 3rem;
+    z-index: 106;
+  }
+  
+  .selectCardSection {
+    display:flex;
+    flex-direction: column;  
+    padding-top: 0rem;
+    margin: 0 auto;  
+    z-index: 101;
+    height: 95vh;
+  } 
+  
+  .selectCardSection div:first-child {
+    height: 10rem;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 2rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position:relative;
+    z-index: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8%;
+    border-bottom: 3px solid #ffffffad;  
+  }
+
+  .selectCardSection__all h3 {
+    display: none;
+  }
+  
+  .selectCardSection__all {
+    
+  }
+
+  .selectCardSection__equipment {
+    background-image: url('../images/swordWhite.png');
+  }
+  
+  .selectCardSection__creatures {
+    background-image: url('../images/horseWhite.png');
+  }
+  
+  .selectCardSection__materials {
+    background-image: url('../images/AppleWhite.png');
+  }
+  
+  .selectCardSection__monsters {
+    background-image: url('../images/skullWhite.png');
+  }
+  
+  .selectCardSection__treasures {
+    background-image: url('../images/treasureWhite.png');
+  }
+  
+  .itemsList h2 {
+    margin-top: 0.4rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}

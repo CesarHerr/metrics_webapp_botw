@@ -6,7 +6,7 @@ import truth from '../images/search.png';
 function Card({ name, image, handleClick }) {
   return (
     <li className="cards">
-      <NavLink onClick={handleClick} to="../card_detail">
+      <NavLink onClick={handleClick} to="">
         <span className="truth">
           <img src={truth} alt="length of truth" />
         </span>
