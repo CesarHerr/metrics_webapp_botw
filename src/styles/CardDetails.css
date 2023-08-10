@@ -145,17 +145,15 @@
   }
 
   .cardDetails {
+    position:static;
     background-color: transparent;
-    padding-top: 2rem;
-    width: 100%;
+    padding-top: 2rem;  
     min-width: 520px;
-    right: 0;
-    height: 100%;
+    right: 0; 
     background-image: url('../images/link2-removebg-preview.png');
     background-repeat: no-repeat;
     background-position: center right;
     overflow: auto;
-    z-index: 100;
   }
 
   .creatureImg {
