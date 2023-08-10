@@ -13,6 +13,7 @@ describe('botwSlice reducer', () => {
       treasures: [],
       clickedCardId: null,
       error: undefined,
+      isCardDetailsVisible: false,
     });
   });
 

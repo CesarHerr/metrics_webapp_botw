@@ -9,15 +9,23 @@ exports[`Categories Renders Categories component 1`] = `
       class="creatures"
     >
       <a
-        class="test"
+        class=""
         href="/creatures"
       >
         <span
-          class="material-symbols-outlined"
+          class="truth"
         >
-          arrow_circle_right
+          <img
+            alt="length of truth"
+            src="search.png"
+          />
         </span>
         <div>
+          <img
+            alt="white cursor"
+            class="creatures__arrowIcon"
+            src="whiteIcon.png"
+          />
           <h2>
             Creatures
           </h2>
@@ -35,11 +43,19 @@ exports[`Categories Renders Categories component 1`] = `
         href="/equipment"
       >
         <span
-          class="material-symbols-outlined"
+          class="truth"
         >
-          arrow_circle_right
+          <img
+            alt="length of truth"
+            src="search.png"
+          />
         </span>
         <div>
+          <img
+            alt="white cursor"
+            class="creatures__arrowIcon"
+            src="whiteIcon.png"
+          />
           <h2>
             Equipment
           </h2>
@@ -57,11 +73,19 @@ exports[`Categories Renders Categories component 1`] = `
         href="/materials"
       >
         <span
-          class="material-symbols-outlined"
+          class="truth"
         >
-          arrow_circle_right
+          <img
+            alt="length of truth"
+            src="search.png"
+          />
         </span>
         <div>
+          <img
+            alt="white cursor"
+            class="creatures__arrowIcon"
+            src="whiteIcon.png"
+          />
           <h2>
             Materials
           </h2>
@@ -79,11 +103,19 @@ exports[`Categories Renders Categories component 1`] = `
         href="/monsters"
       >
         <span
-          class="material-symbols-outlined"
+          class="truth"
         >
-          arrow_circle_right
+          <img
+            alt="length of truth"
+            src="search.png"
+          />
         </span>
         <div>
+          <img
+            alt="white cursor"
+            class="creatures__arrowIcon"
+            src="whiteIcon.png"
+          />
           <h2>
             Monsters
           </h2>
@@ -101,11 +133,19 @@ exports[`Categories Renders Categories component 1`] = `
         href="/treasures"
       >
         <span
-          class="material-symbols-outlined"
+          class="truth"
         >
-          arrow_circle_right
+          <img
+            alt="length of truth"
+            src="search.png"
+          />
         </span>
         <div>
+          <img
+            alt="white cursor"
+            class="creatures__arrowIcon"
+            src="whiteIcon.png"
+          />
           <h2>
             Treasures
           </h2>

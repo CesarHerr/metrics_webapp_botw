@@ -3,9 +3,10 @@ import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
+import thunk from 'redux-thunk';
 import Treasures from '../components/Treasures';
 
-const mockStore = configureStore([]);
+const mockStore = configureStore([thunk]);
 
 describe('Treasures render test', () => {
   let store;
@@ -26,6 +27,19 @@ describe('Treasures render test', () => {
             image: '../images/treasures.png',
           },
         ],
+        detail: {
+          data: {
+            id: '1',
+            name: 'detail 1',
+            category: 'details',
+            image: '../images/triforce.png',
+            description: 'description 1',
+            common_locations: ['location 1'],
+            properties: { property: 0 },
+          },
+          status: 'fulfilled',
+          error: null,
+        },
       },
     });
   });

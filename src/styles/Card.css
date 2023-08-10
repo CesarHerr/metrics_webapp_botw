@@ -84,6 +84,7 @@
   }
 
   .cards img:hover {
+    cursor: pointer;
     rotate: -10deg;
     transform: scale(1.1);
   }
