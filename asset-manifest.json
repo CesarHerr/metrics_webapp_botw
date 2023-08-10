@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/metrics_webapp_botw/static/css/main.59b8c678.css",
-    "main.js": "/metrics_webapp_botw/static/js/main.f9594df4.js",
+    "main.css": "/metrics_webapp_botw/static/css/main.548bc97d.css",
+    "main.js": "/metrics_webapp_botw/static/js/main.98e3799b.js",
     "static/media/search.png": "/metrics_webapp_botw/static/media/search.8725d83f699f4357e534.png",
+    "static/media/link2-removebg-preview.png": "/metrics_webapp_botw/static/media/link2-removebg-preview.e1142f48d5d1430848e5.png",
+    "static/media/botw7.webp": "/metrics_webapp_botw/static/media/botw7.5ff7e5612a11e7b28910.webp",
+    "static/media/botw5.webp": "/metrics_webapp_botw/static/media/botw5.38b975aa8bb696df9129.webp",
     "static/media/triforce.png": "/metrics_webapp_botw/static/media/triforce.5bcfd057069264ad8477.png",
     "static/media/heart.png": "/metrics_webapp_botw/static/media/heart.cf25528265b8a1d3588c.png",
     "static/media/zeldaicon.png": "/metrics_webapp_botw/static/media/zeldaicon.ea6b9a6ccab09f2c9288.png",
     "static/media/masterSword4.png": "/metrics_webapp_botw/static/media/masterSword4.a7ada87f06c8b200c393.png",
     "static/media/HyliaSerifBeta-Regular.otf": "/metrics_webapp_botw/static/media/HyliaSerifBeta-Regular.587194a6240d0f662864.otf",
     "index.html": "/metrics_webapp_botw/index.html",
-    "main.59b8c678.css.map": "/metrics_webapp_botw/static/css/main.59b8c678.css.map",
-    "main.f9594df4.js.map": "/metrics_webapp_botw/static/js/main.f9594df4.js.map"
+    "main.548bc97d.css.map": "/metrics_webapp_botw/static/css/main.548bc97d.css.map",
+    "main.98e3799b.js.map": "/metrics_webapp_botw/static/js/main.98e3799b.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b8c678.css",
-    "static/js/main.f9594df4.js"
+    "static/css/main.548bc97d.css",
+    "static/js/main.98e3799b.js"
   ]
 }
