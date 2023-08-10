@@ -1,8 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { fetchMaterials } from '../redux/botw/Api';
 import { setClickedCardId } from '../redux/botw/botwSlice';
 import Card from './Card';
+import sword from '../images/masterSword4.png';
+import CardDetails from './CardDetails';
 
 function Materials() {
   const dispatch = useDispatch();
@@ -18,15 +21,25 @@ function Materials() {
     dispatch(setClickedCardId(id));
   };
 
+  const navigate = useNavigate();
+  const handleGoBack = () => {
+    if (navigate) {
+      navigate(-1);
+    }
+  };
+
   return (
-    <section className="selectCardSection">
-      <div className="selectCardSection__materials">
-        <h2>Materials</h2>
-        <h3>82</h3>
-      </div>
-      <ul className="itemsList">
-        {materials
-          .map((card) => (
+    <div className="infoMenu">
+      <section className="selectCardSection">
+        <div className="selectCardSection__materials selectCardSection__all">
+          <h2>Materials</h2>
+          <h3>82</h3>
+          <button type="button" onClick={handleGoBack} className="selectCardSection__navButton">
+            <img className="selectCardSection__masterSword" src={sword} alt="master sword" />
+          </button>
+        </div>
+        <ul className="itemsList">
+          {materials.map((card) => (
             <Card
               key={card.id}
               image={card.image}
@@ -34,10 +47,11 @@ function Materials() {
               name={card.name[0].toUpperCase() + card.name.substring(1)}
               handleClick={() => handleClick(card.id)}
             />
-          ))
-          .slice(0, 100)}
-      </ul>
-    </section>
+          ))}
+        </ul>
+      </section>
+      <CardDetails />
+    </div>
   );
 }
 
