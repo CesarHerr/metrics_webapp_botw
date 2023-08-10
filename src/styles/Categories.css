@@ -2,54 +2,54 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 90vh;
-  background-color: rgba(86, 138, 228, 0.671);
   padding-top: 2.8rem;
+}
+
+.categoryList li {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  transition: all 0.2s ease-in-out;
+}
+
+.categoryList li:hover {
+  background-color: rgb(15, 163, 60);
+  background-blend-mode: hard-light;
 }
 
 .creatures {
   grid-area: 1 / 1 / 1 / 3;
-  position: relative;
   background-image: url('../images/creatures.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(86, 138, 228, 0.897);
-  background-blend-mode: soft-light;
+  background-color: rgba(17, 196, 70, 0.945);
+}
+
+.creatures__arrowIcon {
+  visibility: hidden;
+}
+
+.truth img {
+  width: 2rem;
 }
 
 .equipment {
-  position: relative;
   background-image: url('../images/equipment.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(63, 99, 165, 0.897);
-  background-blend-mode: soft-light;
+  background-color: rgba(9, 138, 47, 0.945);
 }
 
 .materials {
-  position: relative;
   background-image: url('../images/materials.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(78, 120, 204, 0.897);
-  background-blend-mode: soft-light;
+  background-color: rgba(17, 180, 66, 0.945);
 }
 
 .monsters {
-  position: relative;
   background-image: url('../images/monsters.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(78, 120, 204, 0.897);
-  background-blend-mode: soft-light;
+  background-color: rgba(17, 180, 66, 0.945);
 }
 
 .treasures {
-  position: relative;
   background-image: url('../images/treasure.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(63, 99, 165, 0.884);
-  background-blend-mode: soft-light;
+  background-color: rgba(9, 138, 47, 0.945);
 }
 
 .categoryList li a {
@@ -64,4 +64,75 @@
 .categoryList li a h3 {
   display: flex;
   flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .categoryList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0 2rem 0 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .categoryList li {
+    transition: all 0.3s ease-in-out;
+    width: 20%;
+    background-color: transparent;
+    z-index: 2;
+    height: 3rem;
+    background-image: none;
+  }
+
+  .categoryList li a {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .categoryList li a div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 260px;
+  }
+
+  .categoryList li a div h3,
+  .categoryList li a div h2 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.7rem;
+  }
+
+  .categoryList li:hover {
+    background-color: transparent;
+    filter: none;
+    transform: scale(1.1);
+  }
+
+  .categoryList:hover li:not(:hover) {
+    filter: blur(2px);
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotateX(0deg);
+    }
+
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+
+  .categoryList li:hover .creatures__arrowIcon {
+    visibility: visible;
+    animation: spin 1s linear infinite;
+  }
+
+  .truth img {
+    display: none;
+  }
 }

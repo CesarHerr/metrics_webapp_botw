@@ -3,9 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchDetail } from '../redux/botw/Api';
 import '../styles/CardDetails.css';
 import heart from '../images/heart.png';
+import sword2 from '../images/masterSword4.png';
+import { hideCardDetails } from '../redux/botw/botwSlice';
 
 function CardDetails() {
-  const { clickedCardId, detail } = useSelector((state) => state.cards);
+  const { clickedCardId, detail, isCardDetailsVisible } = useSelector((state) => state.cards);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -14,15 +16,25 @@ function CardDetails() {
     }
   }, [dispatch, clickedCardId]);
 
+  const handleClose = () => {
+    dispatch(hideCardDetails());
+  };
+
   return (
-    <section className="cardDetails">
+    <section className="cardDetails" style={{ display: isCardDetailsVisible ? 'inline' : 'none' }}>
+      <div className="cardDetails__close">
+        <button type="button" onClick={handleClose}>
+          <img src={sword2} alt="master sword closing" />
+          <img src={sword2} alt="master sword closing" />
+        </button>
+      </div>
       <h2>{detail.name ? detail.name[0].toUpperCase() + detail.name.substring(1) : 'Name'}</h2>
       <h6>
         Category :
         {' '}
         {detail.category}
       </h6>
-      <p>{detail.description}</p>
+      <p className="cardDetails__description">{detail.description}</p>
       <img className="creatureImg" src={detail.image} alt={`${detail.name} card`} />
       <span className="locations">
         <h3>

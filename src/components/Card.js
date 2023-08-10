@@ -1,25 +1,36 @@
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import '../styles/Card.css';
+import { useDispatch } from 'react-redux';
+import { showCardDetails } from '../redux/botw/botwSlice';
+import truth from '../images/search.png';
 
 function Card({
   name, image, handleClick,
 }) {
+  const dispatch = useDispatch();
+
+  const handleDisplay = () => {
+    dispatch(showCardDetails());
+  };
+
   return (
     <li className="cards">
-      <NavLink onClick={handleClick} to="../card_detail">
-        <span className="material-symbols-outlined">
-          arrow_circle_right
+      <NavLink onClick={handleClick} to="">
+        <span className="truth">
+          <img src={truth} alt="length of truth" />
         </span>
         <ul>
           <li>
-            <h3>{name}</h3>
+            <h4>{name}</h4>
           </li>
           <li>
-            <img src={image} alt={name} />
+            <button type="button" onClick={handleDisplay}>
+              <img src={image} alt={name} />
+            </button>
           </li>
           <li>
-            <h4>Profile</h4>
+            <h5>Profile</h5>
           </li>
         </ul>
       </NavLink>

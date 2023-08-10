@@ -5,28 +5,28 @@
   color: #fff;
 }
 
+@font-face {
+  font-family: 'Hylia Serif';
+  src: url('../src/font/HyliaSerifBeta-Regular.otf');
+}
+
 body {
-  background-color: rgba(99, 154, 250, 0.904);
-  margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(26, 228, 87, 0.904);
+  font-family:
+    'Hylia Serif',
+    'Gill Sans',
+    'Gill Sans MT',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/triforce.png');
-  background-size: contain;
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 100%;
-}
-
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
 }
 
 li {
@@ -36,4 +36,23 @@ li {
 a:active,
 a:link {
   text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: transparent;
+    background-image: url('./images/botw7.webp');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
 }
