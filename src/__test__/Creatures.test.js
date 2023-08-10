@@ -3,8 +3,8 @@ import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
-import Creatures from '../components/Creatures';
 import thunk from 'redux-thunk';
+import Creatures from '../components/Creatures';
 
 const mockStore = configureStore([thunk]);
 
