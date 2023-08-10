@@ -14,10 +14,14 @@ exports[`Categories Renders Categories component 1`] = `
         />
       </button>
       <a
-        aria-current="page"
-        class="titleNav active"
-        href="/"
+        class="titleNav"
+        href="/metrics_webapp_botw/"
       >
+        <img
+          alt="logo breath of the wild"
+          class="titleNav__zeldaIconDesktop"
+          src="botw5.webp"
+        />
         <h1>
           Zelda - Botw
         </h1>
@@ -27,7 +31,7 @@ exports[`Categories Renders Categories component 1`] = `
       </a>
       <img
         alt="zelda icon"
-        class="zeldaIcon"
+        class="titleNav_zeldaIconMobile"
         src="zeldaicon.png"
       />
     </nav>

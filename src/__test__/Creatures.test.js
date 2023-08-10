@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import Creatures from '../components/Creatures';
+import thunk from 'redux-thunk';
 
-const mockStore = configureStore([]);
+const mockStore = configureStore([thunk]);
 
 describe('Creatures', () => {
   let store;
@@ -26,6 +27,19 @@ describe('Creatures', () => {
             image: '../images/creatures.png',
           },
         ],
+        detail: {
+          data: {
+            id: '1',
+            name: 'detail 1',
+            category: 'details',
+            image: '../images/triforce.png',
+            description: 'description 1',
+            common_locations: ['location 1'],
+            properties: { property: 0 },
+          },
+          status: 'fulfilled',
+          error: null,
+        },
       },
     });
   });
