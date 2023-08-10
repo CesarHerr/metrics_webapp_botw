@@ -33,6 +33,11 @@ a:link {
   text-decoration: none;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     background-image: url('./images/botw7.webp');    
