@@ -95,10 +95,6 @@
     }
   }
 
-  .selectCardSection__masterSword:active {
-    margin: -2rem;
-  }
-
   .itemsList {
     display: inline;
     margin: 0;
