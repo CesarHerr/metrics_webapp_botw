@@ -22,7 +22,7 @@
   z-index: 100;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode:hard-light;
+  background-blend-mode: hard-light;
 }
 
 .selectCardSection__equipment {
@@ -45,12 +45,6 @@
   background-image: url('../images/treasure.png');
 }
 
-.itemsList h2 {
-  margin-top: 0.4rem;
-  font-size: 1.3rem;
-  text-align: center;
-}
-
 .selectCardSection__masterSword {
   display: none;
 }
@@ -61,8 +55,8 @@
     grid-template-columns: repeat(2, 1fr);
     position: absolute;
     width: 95%;
-    top:2rem;
-    left:2.5%;
+    top: 2rem;
+    left: 2.5%;
     z-index: 99;
     height: 95%;
   }
@@ -77,23 +71,25 @@
     background: rgba(126, 117, 117, 0.5);
     backdrop-filter: blur(5px);
   }
-  
+
   .selectCardSection__masterSword {
     display: inline;
-    width: 3rem;
+    width: 40%;
+    max-width: 3rem;
     transition: all 0.4s ease-in-out;
     rotate: 90deg;
-    animation: spin2 2s linear infinite; 
+    animation: spin2 2s linear infinite;
   }
 
   .selectCardSection__masterSword:hover {
-    cursor: pointer; 
+    cursor: pointer;
   }
 
   @keyframes spin2 {
     0% {
       transform: rotateY(0deg);
     }
+
     100% {
       transform: rotateY(360deg);
     }
@@ -104,34 +100,33 @@
   }
 
   .itemsList {
-    display: flex;
-    flex-wrap: wrap;  
-    margin: 0; 
-    overflow:auto;
+    display: inline;
+    margin: 0;
+    overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #aaa #ddd;
     z-index: 103;
-    
   }
 
   hr {
     width: 40%;
     height: 3px;
-    background-color: #ffffffbb;
+    background-color: #fffb;
     margin-left: 3rem;
     z-index: 106;
   }
-  
+
   .selectCardSection {
-    display:flex;
-    flex-direction: column;  
-    padding-top: 0rem;
-    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    width: 100%;
+    margin: 0 auto;
     z-index: 101;
     height: 95vh;
-  } 
-  
+  }
+
   .selectCardSection div:first-child {
     height: 10rem;
     margin: 0 auto;
@@ -140,48 +135,63 @@
     background-color: transparent;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
-    position:relative;
+    position: relative;
     z-index: 100;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: 8%;
-    border-bottom: 3px solid #ffffffad;  
+    border-bottom: 3px solid #ffffffad;
   }
 
   .selectCardSection__all h3 {
     display: none;
   }
-  
+
   .selectCardSection__all {
-    
+    background-image: none;
+  }
+
+  .selectCardSection h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .itemsList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .selectCardSection__masterSword {
+    display: inline;
+    width: 80%;
+    max-width: 3rem;
+  }
+
+  .selectCardSection h2 {
+    font-size: 2rem;
   }
 
   .selectCardSection__equipment {
     background-image: url('../images/swordWhite.png');
   }
-  
+
   .selectCardSection__creatures {
     background-image: url('../images/horseWhite.png');
   }
-  
+
   .selectCardSection__materials {
     background-image: url('../images/AppleWhite.png');
   }
-  
+
   .selectCardSection__monsters {
     background-image: url('../images/skullWhite.png');
   }
-  
+
   .selectCardSection__treasures {
     background-image: url('../images/treasureWhite.png');
-  }
-  
-  .itemsList h2 {
-    margin-top: 0.4rem;
-    font-size: 1.3rem;
-    text-align: center;
   }
 }

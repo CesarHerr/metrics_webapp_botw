@@ -1,7 +1,7 @@
 .cardDetails__close {
   display: flex;
   justify-content: center;
-  margin-top: -2rem; 
+  margin-top: -2rem;
 }
 
 .cardDetails__close img {
@@ -10,12 +10,12 @@
 }
 
 .cardDetails__close img:first-child {
-  translate: 7px; 
-  animation: close 4s ease-out infinite;  
+  translate: 7px;
+  animation: close 4s ease-out infinite;
 }
 
 .cardDetails__close img:last-child {
-  animation: close2 4s ease-out infinite; 
+  animation: close2 4s ease-out infinite;
   translate: -7px;
 }
 
@@ -23,6 +23,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(-45deg);
   }
@@ -36,9 +37,11 @@
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(45deg);
   }
+
   75% {
     transform: rotate(45deg);
   }
@@ -145,14 +148,15 @@
   }
 
   .cardDetails {
-    position:static;
+    position: static;
     background-color: transparent;
-    padding-top: 2rem;  
+    padding-top: 2rem;
     min-width: 520px;
-    right: 0; 
-    background-image: url('../images/link2-removebg-preview.png');
+    right: 0;
+    background-image: url('../images/link2-removebg.png');
     background-repeat: no-repeat;
     background-position: center right;
+    background-size: 50% auto;
     overflow: auto;
   }
 
@@ -191,7 +195,7 @@
     width: 65%;
     max-width: 500px;
   }
-  
+
   .infoCard li {
     margin: 0.2rem;
     display: flex;
@@ -204,14 +208,14 @@
     height: auto;
     z-index: 100;
   }
-  
+
   .infoCard p {
     font-size: 1.2rem;
   }
-  
+
   .cardDetails h2 {
     text-align: center;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .cardDetails h4 {
@@ -219,36 +223,36 @@
     font-weight: 500;
     color: rgb(248, 248, 188);
   }
-  
+
   .cardDetails p,
   .cardDetails h6 {
-    padding: 0rem 0rem; 
-  }  
-  
+    padding: 0 0;
+  }
+
   .cardDetails i {
     font-size: 1.2rem;
-    text-align: center; 
-  } 
-  
+    text-align: center;
+  }
+
   .locations {
-    margin-top: 0rem;
+    margin-top: 0;
     display: flex;
     gap: 0.2rem;
     justify-content: center;
     padding: 0 0.5rem;
-    font-size: 1rem; 
+    font-size: 1rem;
   }
-  
+
   .locations p {
     font-size: 1rem;
     margin-top: 3px;
     z-index: 100;
-  } 
+  }
 
   .locations h3 {
     z-index: 100;
   }
-  
+
   .heart {
     width: 10%;
     max-width: 40px;
@@ -256,20 +260,19 @@
     left: 0;
     top: 0;
   }
-  
+
   .infoCard li:last-child h4:nth-of-type(2) {
-    margin-top: 0rem;
+    margin-top: 0;
   }
-  
+
   .infoCard li p {
-    margin-top: 0rem;
+    margin-top: 0;
   }
-  
+
   .infoCard li:last-child p {
     font-size: 1rem;
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
-  
 }

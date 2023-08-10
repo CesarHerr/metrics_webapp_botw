@@ -47,7 +47,6 @@
   background-color: rgba(17, 180, 66, 0.945);
 }
 
-
 .cards ul h4 {
   width: 20vw;
   font-size: 1rem;
@@ -59,67 +58,85 @@
 
 @media screen and (min-width: 768px) {
   .cards {
+    display: flex;
+    flex-direction: row;
     height: auto;
-    padding: 0.4rem;
-    width: 20%;
+    padding: 0;
+    width: 100%;
     min-width: 120px;
     transition: all 0.2s ease-in-out;
-    z-index: 102; 
-    margin: 0.4rem;
+    z-index: 102;
+    margin: 0 0.4rem;
   }
-  
 
   .cards:hover {
     padding: 0;
   }
-  
+
   .cards img {
     border-radius: 0.4rem;
     box-shadow: none;
     rotate: 0deg;
     transition: all 0.3s ease-in-out;
     z-index: 105;
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    height: auto;
   }
-  
+
   .cards img:hover {
     rotate: -10deg;
     transform: scale(1.1);
   }
 
-  .card img:active {
-    scale: (2);
-  }
-  
   .cards ul {
-    margin-top: 10rem;
-    display: inline;
-  }
-  
-  .cards span {
+    margin-top: 0;
     display: flex;
-    flex-direction: row;
   }
-  
+
   .cards:nth-child(odd) {
     background-color: transparent;
   }
-  
+
   .cards:nth-child(even) {
-    background-color: transparent;
+    background-color: rgba(128, 128, 128, 0.384);
   }
-  
-  
+
   .cards h4 {
     width: 20vw;
     font-size: 1rem;
-    position:relative;
+    position: relative;
     z-index: 106;
     max-width: 100px;
     margin-left: 10px;
   }
-  
+
+  .cards ul h5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .cards {
+    height: auto;
+    padding: 0.4rem;
+    width: 20%;
+    margin: 0.4rem;
+  }
+
+  .cards img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards ul {
+    margin-top: 10rem;
+    display: inline;
+  }
+
+  .cards:nth-child(even) {
+    background-color: transparent;
+  }
+
   .cards ul h5 {
     display: none;
   }

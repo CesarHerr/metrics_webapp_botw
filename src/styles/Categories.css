@@ -84,7 +84,6 @@
     z-index: 2;
     height: 3rem;
     background-image: none;
-    transition: all 0.3s ease-in-out;
   }
 
   .categoryList li a {
@@ -101,7 +100,7 @@
     min-width: 260px;
   }
 
-  .categoryList li a div h3, 
+  .categoryList li a div h3,
   .categoryList li a div h2 {
     font-style: italic;
     font-weight: 300;
@@ -115,13 +114,14 @@
   }
 
   .categoryList:hover li:not(:hover) {
-    filter: blur(2px)
-  } 
+    filter: blur(2px);
+  }
 
   @keyframes spin {
     0% {
       transform: rotateX(0deg);
     }
+
     100% {
       transform: rotateX(360deg);
     }
@@ -129,7 +129,7 @@
 
   .categoryList li:hover .creatures__arrowIcon {
     visibility: visible;
-    animation: spin 1s linear infinite; 
+    animation: spin 1s linear infinite;
   }
 
   .truth img {

@@ -35,7 +35,7 @@ nav button img:hover {
   transform: scale(1.5);
 }
 
-nav button {  
+nav button {
   width: 3rem;
   cursor: pointer;
   padding-left: 0.8rem;
@@ -56,14 +56,14 @@ header nav a {
   header {
     background-color: transparent;
     padding: 0.4rem;
-    position: relative; 
+    position: relative;
     z-index: 1;
   }
-  
+
   nav {
     justify-content: center;
   }
-  
+
   .titleNav_zeldaIconMobile {
     display: none;
   }
@@ -80,16 +80,16 @@ header nav a {
     position: relative;
     left: 5px;
   }
-  
-  h1 {  
-    display: none;  
-  } 
-  
-  nav button img {
-    display:none;
+
+  h1 {
+    display: none;
   }
-  
+
+  nav button img {
+    display: none;
+  }
+
   nav button img:active {
-  margin-left: 1rem;
+    margin-left: 1rem;
   }
 }
