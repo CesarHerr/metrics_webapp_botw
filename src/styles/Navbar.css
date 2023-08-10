@@ -35,10 +35,8 @@ nav button img:hover {
   transform: scale(1.5);
 }
 
-nav button {
-  background: none;
+nav button {  
   width: 3rem;
-  border: none;
   cursor: pointer;
   padding-left: 0.8rem;
 }

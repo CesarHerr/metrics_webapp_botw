@@ -86,11 +86,6 @@
     animation: spin2 2s linear infinite; 
   }
 
-  .selectCardSection button {
-    background: none;
-    border: none;
-  }
-
   .selectCardSection__masterSword:hover {
     cursor: pointer; 
   }

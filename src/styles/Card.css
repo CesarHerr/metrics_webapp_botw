@@ -6,7 +6,7 @@
 }
 
 .cards:hover {
-  padding: 0.8rem 0;
+  transform: scaleY(1.1);
   box-shadow: 12px 13px 11px -5px rgba(51, 105, 105, 0.84);
   -webkit-box-shadow: 12px 13px 11px -5px rgba(51, 105, 105, 0.84);
   -moz-box-shadow: 12px 13px 11px -5px rgba(51, 105, 105, 0.84);
