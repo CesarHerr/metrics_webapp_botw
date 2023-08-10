@@ -9,6 +9,7 @@ import sword from '../images/masterSword4.png';
 
 function Creatures() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { creatures } = useSelector((state) => state.cards);
 
   useEffect(() => {
@@ -21,7 +22,6 @@ function Creatures() {
     dispatch(setClickedCardId(id));
   };
 
-  const navigate = useNavigate();
   const handleGoBack = () => {
     if (navigate) {
       navigate(-1);

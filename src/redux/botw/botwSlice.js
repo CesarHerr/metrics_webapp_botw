@@ -19,6 +19,7 @@ const initialState = {
   treasures: [],
   clickedCardId: null,
   error: undefined,
+  isCardDetailsVisible: false,
 };
 
 const botwSlice = createSlice({
@@ -27,6 +28,12 @@ const botwSlice = createSlice({
   reducers: {
     setClickedCardId: (state, action) => {
       state.clickedCardId = action.payload;
+    },
+    showCardDetails: (state) => {
+      state.isCardDetailsVisible = true;
+    },
+    hideCardDetails: (state) => {
+      state.isCardDetailsVisible = false;
     },
   },
   extraReducers: (builder) => {
@@ -78,5 +85,5 @@ const botwSlice = createSlice({
   },
 });
 
-export const { setClickedCardId } = botwSlice.actions;
+export const { setClickedCardId, showCardDetails, hideCardDetails } = botwSlice.actions;
 export default botwSlice.reducer;
