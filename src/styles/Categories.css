@@ -103,6 +103,7 @@
 
   .categoryList li a div h3, 
   .categoryList li a div h2 {
+    font-style: italic;
     font-weight: 300;
     font-size: 1.7rem;
   }
