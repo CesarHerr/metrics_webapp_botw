@@ -83,6 +83,12 @@ This web application is a Single Page Application (SPA) serving as an encycloped
 > You can see a video description here : [click here](https://www.loom.com/share/aa1d45f02b7b4d52b2dc7e77c339b6fc?sid=29300449-198a-4ab8-aee1-3d02af7ae60e)
 
 
+
+
+## ⏫ Updated Version 11-08-2023, Added Desktop Version and Updated Mobile <a name="Updated version"></a>
+[botwD.webm](https://github.com/CesarHerr/metrics_webapp_botw/assets/111262493/f4e7f09b-057c-483a-9410-cfd96c89605b)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -151,7 +157,6 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add Desktop styles.
 - Add more functions.
 
 ## Walkthrough <a name="walkthrough"></a>
