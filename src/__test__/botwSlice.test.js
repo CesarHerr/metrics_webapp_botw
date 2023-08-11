@@ -14,6 +14,8 @@ describe('botwSlice reducer', () => {
       clickedCardId: null,
       error: undefined,
       isCardDetailsVisible: false,
+      isCardListVisible: false,
+      isImageVisible: false,
     });
   });
 
