@@ -1,3 +1,22 @@
+.selectCardSection__all--search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 31vh;
+}
+
+.selectCardSection__all--search input {
+  border: none;
+  border-radius: 0.2rem;
+  color: black;
+  font-size: 0.8rem;
+  height: 1.5rem;
+  padding: 0.3rem;
+  width: 30%;
+}
+
 .itemsList {
   flex-direction: column;
   margin-top: 31vh;
@@ -7,7 +26,7 @@
   padding-top: 2.8rem;
 }
 
-.selectCardSection div:first-child {
+.selectCardSection__all {
   height: 31vh;
   background-color: rgba(17, 196, 70, 0.945);
   display: flex;
@@ -48,6 +67,24 @@
 }
 
 @media screen and (min-width: 768px) {
+  .selectCardSection__all--search {
+    display: flex;
+    flex-direction: column;
+    min-width: 90px;
+    height: auto;
+    width: auto;
+  }
+
+  .selectCardSection__all--search input {
+    border: none;
+    border-radius: 0.2rem;
+    color: black;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    padding: 0.3rem;
+    width: 100%;
+  }
+
   .infoMenu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -100,6 +137,7 @@
     scrollbar-width: thin;
     scrollbar-color: #aaa #ddd;
     z-index: 103;
+    padding: 28px 0;
   }
 
   hr {
@@ -121,7 +159,7 @@
     height: 95vh;
   }
 
-  .selectCardSection div:first-child {
+  .selectCardSection__all {
     height: 10rem;
     margin: 0 auto;
     width: 80%;

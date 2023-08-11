@@ -61,7 +61,6 @@
     display: flex;
     flex-direction: row;
     height: auto;
-    padding: 0;
     width: 100%;
     min-width: 120px;
     transition: all 0.2s ease-in-out;
@@ -74,11 +73,11 @@
   }
 
   .cards img {
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     box-shadow: none;
     rotate: 0deg;
     transition: all 0.3s ease-in-out;
-    z-index: 105;
+    padding: 0.4rem;
     width: 40%;
     height: auto;
   }
@@ -119,7 +118,6 @@
 @media screen and (min-width: 991px) {
   .cards {
     height: auto;
-    padding: 0.4rem;
     width: 20%;
     margin: 0.4rem;
   }
