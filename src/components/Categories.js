@@ -1,14 +1,21 @@
 import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import '../styles/Categories.css';
 import truth from '../images/search.png';
 import cursor from '../images/whiteIcon.png';
+import { hideImage, showCardList } from '../redux/botw/botwSlice';
 
 function Categories() {
+  const dispatch = useDispatch();
+  const handleList = () => {
+    dispatch(showCardList());
+    dispatch(hideImage());
+  };
   return (
     <ul className="categoryList">
       <li className="creatures">
 
-        <NavLink to="creatures">
+        <NavLink to="creatures" onClick={handleList}>
           <span className="truth">
             <img src={truth} alt="length of truth" />
           </span>
@@ -22,7 +29,7 @@ function Categories() {
       </li>
       <li className="equipment">
 
-        <NavLink to="equipment">
+        <NavLink to="equipment" onClick={handleList}>
           <span className="truth">
             <img src={truth} alt="length of truth" />
           </span>
@@ -36,7 +43,7 @@ function Categories() {
       </li>
       <li className="materials">
 
-        <NavLink to="materials">
+        <NavLink to="materials" onClick={handleList}>
           <span className="truth">
             <img src={truth} alt="length of truth" />
           </span>
@@ -50,7 +57,7 @@ function Categories() {
       </li>
       <li className="monsters">
 
-        <NavLink to="monsters">
+        <NavLink to="monsters" onClick={handleList}>
           <span className="truth">
             <img src={truth} alt="length of truth" />
           </span>
@@ -64,7 +71,7 @@ function Categories() {
       </li>
       <li className="treasures">
 
-        <NavLink to="treasures">
+        <NavLink to="treasures" onClick={handleList}>
           <span className="truth">
             <img src={truth} alt="length of truth" />
           </span>
