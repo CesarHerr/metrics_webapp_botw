@@ -1,15 +1,18 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { fetchMaterials } from '../redux/botw/Api';
-import { setClickedCardId } from '../redux/botw/botwSlice';
+import { fetchMaterials, fetchDetail } from '../redux/botw/Api';
+import { setClickedCardId, hideImage, showCardList } from '../redux/botw/botwSlice';
 import Card from './Card';
 import sword from '../images/masterSword4.png';
 import CardDetails from './CardDetails';
 
 function Materials() {
   const dispatch = useDispatch();
-  const { materials } = useSelector((state) => state.cards);
+  const navigate = useNavigate();
+  const {
+    materials, isCardListVisible, detail, clickedCardId, isImageVisible,
+  } = useSelector((state) => state.cards);
 
   useEffect(() => {
     if (materials.length === 0) {
@@ -17,28 +20,38 @@ function Materials() {
     }
   }, [dispatch, materials.length]);
 
+  useEffect(() => {
+    if (clickedCardId !== null) {
+      dispatch(fetchDetail(`entry/${clickedCardId}`));
+    }
+  }, [dispatch, clickedCardId]);
+
   const handleClick = (id) => {
     dispatch(setClickedCardId(id));
   };
 
-  const navigate = useNavigate();
   const handleGoBack = () => {
     if (navigate) {
       navigate(-1);
     }
   };
 
+  const handleHideImg = () => {
+    dispatch(hideImage());
+    dispatch(showCardList());
+  };
+
   return (
     <div className="infoMenu">
       <section className="selectCardSection">
         <div className="selectCardSection__materials selectCardSection__all">
-          <h2>Materials</h2>
+          <button type="button" onClick={handleHideImg}><h2>Materials</h2></button>
           <h3>82</h3>
           <button type="button" onClick={handleGoBack} className="selectCardSection__navButton">
             <img className="selectCardSection__masterSword" src={sword} alt="master sword" />
           </button>
         </div>
-        <ul className="itemsList">
+        <ul className="itemsList" style={{ display: isCardListVisible ? 'flex' : 'none' }}>
           {materials.map((card) => (
             <Card
               key={card.id}
@@ -49,6 +62,13 @@ function Materials() {
             />
           ))}
         </ul>
+        <div className="selectCardSection__info" style={{ display: isImageVisible ? 'flex' : 'none' }}>
+          <img
+            className="selectCardSection__info--img"
+            src={detail.image}
+            alt={`${detail.name} card`}
+          />
+        </div>
       </section>
       <CardDetails />
     </div>
