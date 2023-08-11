@@ -4,7 +4,7 @@ import { fetchDetail } from '../redux/botw/Api';
 import '../styles/CardDetails.css';
 import heart from '../images/heart.png';
 import sword2 from '../images/masterSword4.png';
-import { hideCardDetails } from '../redux/botw/botwSlice';
+import { hideCardDetails, hideImage, showCardList } from '../redux/botw/botwSlice';
 
 function CardDetails() {
   const { clickedCardId, detail, isCardDetailsVisible } = useSelector(
@@ -20,6 +20,8 @@ function CardDetails() {
 
   const handleClose = () => {
     dispatch(hideCardDetails());
+    dispatch(showCardList());
+    dispatch(hideImage());
   };
 
   return (

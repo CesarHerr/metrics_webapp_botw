@@ -1,12 +1,17 @@
 import { useNavigate, NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import zelda from '../images/zeldaicon.png';
 import '../styles/Navbar.css';
 import sword from '../images/masterSword4.png';
 import logo from '../images/botw5.webp';
+import { hideCardDetails, hideImage } from '../redux/botw/botwSlice';
 
 function Navbar() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleGoBack = () => {
+    dispatch(hideImage());
+    dispatch(hideCardDetails());
     if (navigate) {
       navigate(-1);
     }

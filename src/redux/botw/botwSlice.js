@@ -20,6 +20,8 @@ const initialState = {
   clickedCardId: null,
   error: undefined,
   isCardDetailsVisible: false,
+  isCardListVisible: false,
+  isImageVisible: false,
 };
 
 const botwSlice = createSlice({
@@ -34,6 +36,18 @@ const botwSlice = createSlice({
     },
     hideCardDetails: (state) => {
       state.isCardDetailsVisible = false;
+    },
+    showCardList: (state) => {
+      state.isCardListVisible = true;
+    },
+    hideCardList: (state) => {
+      state.isCardListVisible = false;
+    },
+    showImage: (state) => {
+      state.isImageVisible = true;
+    },
+    hideImage: (state) => {
+      state.isImageVisible = false;
     },
   },
   extraReducers: (builder) => {
@@ -85,5 +99,8 @@ const botwSlice = createSlice({
   },
 });
 
-export const { setClickedCardId, showCardDetails, hideCardDetails } = botwSlice.actions;
+export const {
+  setClickedCardId, showCardDetails, hideCardDetails, showCardList, hideCardList, showImage,
+  hideImage,
+} = botwSlice.actions;
 export default botwSlice.reducer;

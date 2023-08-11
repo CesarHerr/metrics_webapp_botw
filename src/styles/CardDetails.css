@@ -161,22 +161,16 @@
   }
 
   .creatureImg {
-    display: inline;
-    bottom: 11rem;
-    left: 56%;
-    z-index: 99;
-    width: 10%;
-    min-width: 140px;
-    position: absolute;
+    display: none;
   }
 
   .cardDetails__description {
     border: 2px solid #ffffff83;
     background-color: #39341f79;
     border-radius: 0.5rem;
-    width: 40%;
-    min-width: 410px;
-    bottom: 1rem;
+    width: 47%;
+    min-width: 470px;
+    bottom: 4rem;
     right: 2%;
     z-index: 100;
     position: absolute;
