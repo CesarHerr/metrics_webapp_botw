@@ -1,3 +1,24 @@
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%
+  } to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.cards {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 15% cover 25%;
+  animation-fill-mode: both;
+}
+
 .cards {
   height: 100%;
   padding: 0.4rem;
@@ -58,6 +79,10 @@
 
 @media screen and (min-width: 768px) {
   .cards {
+    animation-range: entry 5% cover 45%;
+  }
+
+  .cards {
     display: flex;
     flex-direction: row;
     height: auto;
@@ -116,6 +141,10 @@
 }
 
 @media screen and (min-width: 991px) {
+  .cards {
+    animation-range: entry 55% cover 70%;
+  }
+
   .cards {
     height: auto;
     width: 20%;

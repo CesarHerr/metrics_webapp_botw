@@ -20,6 +20,7 @@
 .itemsList {
   flex-direction: column;
   margin-top: 31vh;
+  margin-bottom: 6rem;
 }
 
 .selectCardSection {
@@ -137,7 +138,8 @@
     scrollbar-width: thin;
     scrollbar-color: #aaa #ddd;
     z-index: 103;
-    padding: 28px 0;
+    padding-top: 28px;
+    padding-bottom: 12rem;
   }
 
   hr {
