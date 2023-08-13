@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/metrics_webapp_botw/static/css/main.a73ce0db.css",
-    "main.js": "/metrics_webapp_botw/static/js/main.969fee64.js",
+    "main.css": "/metrics_webapp_botw/static/css/main.0b985646.css",
+    "main.js": "/metrics_webapp_botw/static/js/main.af50a4f4.js",
     "static/media/link2-removebg.png": "/metrics_webapp_botw/static/media/link2-removebg.43fb34be402db136b3ba.png",
     "static/media/search.png": "/metrics_webapp_botw/static/media/search.8725d83f699f4357e534.png",
     "static/media/botw7.webp": "/metrics_webapp_botw/static/media/botw7.5ff7e5612a11e7b28910.webp",
@@ -14,11 +14,11 @@
     "static/media/horseWhite.png": "/metrics_webapp_botw/static/media/horseWhite.bff12e8dde7785464569.png",
     "static/media/swordWhite.png": "/metrics_webapp_botw/static/media/swordWhite.2e2ee6554884848eb2b3.png",
     "index.html": "/metrics_webapp_botw/index.html",
-    "main.a73ce0db.css.map": "/metrics_webapp_botw/static/css/main.a73ce0db.css.map",
-    "main.969fee64.js.map": "/metrics_webapp_botw/static/js/main.969fee64.js.map"
+    "main.0b985646.css.map": "/metrics_webapp_botw/static/css/main.0b985646.css.map",
+    "main.af50a4f4.js.map": "/metrics_webapp_botw/static/js/main.af50a4f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a73ce0db.css",
-    "static/js/main.969fee64.js"
+    "static/css/main.0b985646.css",
+    "static/js/main.af50a4f4.js"
   ]
 }
