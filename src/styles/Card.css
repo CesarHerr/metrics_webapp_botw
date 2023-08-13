@@ -90,7 +90,7 @@
     min-width: 120px;
     transition: all 0.2s ease-in-out;
     z-index: 102;
-    margin: 0 0.4rem;
+    margin: 0 0rem;
   }
 
   .cards:hover {

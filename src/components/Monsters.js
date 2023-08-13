@@ -55,7 +55,7 @@ function Monsters() {
       <section className="selectCardSection">
         <div className="selectCardSection__monsters selectCardSection__all">
           <div className="selectCardSection__all--search">
-            <button type="button" onClick={handleHideImg}><h2>Creatures</h2></button>
+            <button type="button" onClick={handleHideImg}><h2>Monsters</h2></button>
             <input type="text" placeholder="Type a name" value={search} onChange={handleSearch} />
           </div>
           <h3>80</h3>

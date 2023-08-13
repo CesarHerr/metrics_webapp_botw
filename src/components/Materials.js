@@ -62,7 +62,7 @@ function Materials() {
         <div className="selectCardSection__materials selectCardSection__all">
           <div className="selectCardSection__all--search">
             <button type="button" onClick={handleHideImg}>
-              <h2>Creatures</h2>
+              <h2>Materials</h2>
             </button>
             <input
               type="text"
