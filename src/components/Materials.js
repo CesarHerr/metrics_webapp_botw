@@ -11,6 +11,7 @@ import {
 import Card from './Card';
 import sword from '../images/masterSword4.png';
 import CardDetails from './CardDetails';
+import Spinner from './Spinner';
 
 function Materials() {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ function Materials() {
     clickedCardId,
     isImageVisible,
     isSearchVisible,
+    isLoading,
   } = useSelector((state) => state.cards);
   const [search, setSearch] = useState('');
 
@@ -92,7 +94,9 @@ function Materials() {
           className="itemsList"
           style={{ display: isCardListVisible ? 'flex' : 'none' }}
         >
-          {filterList.length > 0 ? (
+          {isLoading && filterList.length <= 0 ? (
+            <Spinner />
+          ) : (
             filterList.map((card) => (
               <Card
                 key={card.id}
@@ -102,11 +106,6 @@ function Materials() {
                 handleClick={() => handleClick(card.id)}
               />
             ))
-          ) : (
-            <>
-              <p>Not Results 😭!! </p>
-              <p>Try another name 😄</p>
-            </>
           )}
         </ul>
         <div
