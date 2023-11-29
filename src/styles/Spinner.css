@@ -1,0 +1,75 @@
+.frame {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15vh;
+  transform: scale(.4);
+}
+
+.dot {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+
+.dot1 {
+  margin-left: 40px;
+  animation: loader_1 .6s infinite;
+}
+
+.dot2 {
+  margin-left: -100px;
+  animation: loader_2 .6s infinite;
+}
+
+.dot3 {
+  margin-left: 180px;
+  position: relative;
+  top: -50px;
+  animation: loader_2 .6s infinite;
+}
+
+.dot4 {
+  margin-left: -100px;
+  margin-top: 20px;  
+  animation: loader_1 .6s infinite;
+}
+
+.dot5 {
+  margin-left: 180px;
+  position: relative;
+  bottom: 50px;;
+  animation: loader_1 .6s infinite;
+}
+
+.dot6 {
+  margin-left: 40px;
+  animation: loader_2 .6s infinite;
+}
+
+@keyframes loader_1 {
+  0%,100%   {
+    transform: scale(.5);
+    opacity: .7;
+  }
+  50%  {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+    opacity: 1;
+  }
+}
+
+@keyframes loader_2 {
+  0%,100%   {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+    opacity: 1;
+  }
+  50%  {
+    transform: scale(.5);
+    opacity: .7;
+  }
+}
