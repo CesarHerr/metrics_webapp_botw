@@ -22,6 +22,7 @@ const initialState = {
   isCardDetailsVisible: false,
   isCardListVisible: false,
   isImageVisible: false,
+  isSearchVisible: true,
 };
 
 const botwSlice = createSlice({
@@ -48,6 +49,12 @@ const botwSlice = createSlice({
     },
     hideImage: (state) => {
       state.isImageVisible = false;
+    },
+    showSearch: (state) => {
+      state.isSearchVisible = true;
+    },
+    hideSearch: (state) => {
+      state.isSearchVisible = false;
     },
   },
   extraReducers: (builder) => {
@@ -101,6 +108,6 @@ const botwSlice = createSlice({
 
 export const {
   setClickedCardId, showCardDetails, hideCardDetails, showCardList, hideCardList, showImage,
-  hideImage,
+  hideImage, showSearch, hideSearch,
 } = botwSlice.actions;
 export default botwSlice.reducer;
