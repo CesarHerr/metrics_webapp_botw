@@ -184,10 +184,6 @@
     display: none;
   }
 
-  .selectCardSection__all {
-    background-image: none;
-  }
-
   .selectCardSection h2 {
     font-size: 2rem;
     cursor: pointer;
