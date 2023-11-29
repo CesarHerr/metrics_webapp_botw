@@ -4,12 +4,16 @@ import { fetchDetail } from '../redux/botw/Api';
 import '../styles/CardDetails.css';
 import heart from '../images/heart.png';
 import sword2 from '../images/masterSword4.png';
-import { hideCardDetails, hideImage, showCardList } from '../redux/botw/botwSlice';
+import {
+  hideCardDetails,
+  hideImage,
+  showCardList,
+} from '../redux/botw/botwSlice';
 
 function CardDetails() {
-  const { clickedCardId, detail, isCardDetailsVisible } = useSelector(
-    (state) => state.cards,
-  );
+  const {
+    clickedCardId, detail, isCardDetailsVisible,
+  } = useSelector((state) => state.cards);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -74,13 +78,14 @@ function CardDetails() {
             <p>{detail.hearts_recovered}</p>
             <img className="heart" src={heart} alt="heart" />
           </li>
-        ) : null }
+        ) : null}
 
         {detail.drops && detail.drops.length > 0 ? (
           <li>
             <h4>Drops:</h4>
             <p>
-              {detail.drops.join(', ')[0].toUpperCase() + detail.drops.join(',').substring(1)}
+              {detail.drops.join(', ')[0].toUpperCase()
+                + detail.drops.join(',').substring(1)}
             </p>
           </li>
         ) : null}
