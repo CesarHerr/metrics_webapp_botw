@@ -9,12 +9,13 @@ import Card from './Card';
 import '../styles/Creatures.css';
 import CardDetails from './CardDetails';
 import sword from '../images/masterSword4.png';
+import Spinner from './Spinner';
 
 function Treasures() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const {
-    treasures, isCardListVisible, detail, clickedCardId, isImageVisible, isSearchVisible,
+    treasures, isCardListVisible, detail, clickedCardId, isImageVisible, isSearchVisible, isLoading,
   } = useSelector((state) => state.cards);
   const [search, setSearch] = useState('');
 
@@ -68,20 +69,18 @@ function Treasures() {
           </button>
         </div>
         <ul className="itemsList" style={{ display: isCardListVisible ? 'flex' : 'none' }}>
-          {filterList.length > 0 ? (filterList.map((card) => (
-            <Card
-              key={card.id}
-              image={card.image}
-              category={card.category}
-              name={card.name[0].toUpperCase() + card.name.substring(1)}
-              handleClick={() => handleClick(card.id)}
-            />
-          ))
+          {isLoading && filterList.length <= 0 ? (
+            <Spinner />
           ) : (
-            <>
-              <p>Not Results 😭!! </p>
-              <p>Try another name 😄</p>
-            </>
+            filterList.map((card) => (
+              <Card
+                key={card.id}
+                image={card.image}
+                category={card.category}
+                name={card.name[0].toUpperCase() + card.name.substring(1)}
+                handleClick={() => handleClick(card.id)}
+              />
+            ))
           )}
         </ul>
         <div className="selectCardSection__info" style={{ display: isImageVisible ? 'flex' : 'none' }}>
