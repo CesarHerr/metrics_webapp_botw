@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import '../styles/Card.css';
 import { useDispatch } from 'react-redux';
-import { hideCardList, showCardDetails, showImage } from '../redux/botw/botwSlice';
+import {
+  hideCardList, hideSearch, showCardDetails, showImage,
+} from '../redux/botw/botwSlice';
 import truth from '../images/search.png';
 
 function Card({
@@ -14,6 +16,7 @@ function Card({
     dispatch(showCardDetails());
     dispatch(hideCardList());
     dispatch(showImage());
+    dispatch(hideSearch());
   };
 
   return (
