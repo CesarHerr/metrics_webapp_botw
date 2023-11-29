@@ -2,7 +2,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { fetchMonsters, fetchDetail } from '../redux/botw/Api';
-import { setClickedCardId, hideImage, showCardList } from '../redux/botw/botwSlice';
+import {
+  setClickedCardId, hideImage, showCardList, showSearch,
+} from '../redux/botw/botwSlice';
 import Card from './Card';
 import CardDetails from './CardDetails';
 import sword from '../images/masterSword4.png';
@@ -11,7 +13,7 @@ function Monsters() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const {
-    monsters, isCardListVisible, detail, clickedCardId, isImageVisible,
+    monsters, isCardListVisible, detail, clickedCardId, isImageVisible, isSearchVisible,
   } = useSelector((state) => state.cards);
   const [search, setSearch] = useState('');
 
@@ -40,6 +42,7 @@ function Monsters() {
   const handleHideImg = () => {
     dispatch(hideImage());
     dispatch(showCardList());
+    dispatch(showSearch());
   };
 
   const handleSearch = (event) => {
@@ -56,7 +59,7 @@ function Monsters() {
         <div className="selectCardSection__monsters selectCardSection__all">
           <div className="selectCardSection__all--search">
             <button type="button" onClick={handleHideImg}><h2>Monsters</h2></button>
-            <input type="text" placeholder="Type a name" value={search} onChange={handleSearch} />
+            <input type="text" placeholder="Type a name" value={search} onChange={handleSearch} style={{ display: isSearchVisible ? 'inline' : 'none' }} />
           </div>
           <h3>80</h3>
           <button type="button" onClick={handleGoBack} className="selectCardSection__navButton">

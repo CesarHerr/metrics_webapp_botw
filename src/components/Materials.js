@@ -6,6 +6,7 @@ import {
   setClickedCardId,
   hideImage,
   showCardList,
+  showSearch,
 } from '../redux/botw/botwSlice';
 import Card from './Card';
 import sword from '../images/masterSword4.png';
@@ -20,6 +21,7 @@ function Materials() {
     detail,
     clickedCardId,
     isImageVisible,
+    isSearchVisible,
   } = useSelector((state) => state.cards);
   const [search, setSearch] = useState('');
 
@@ -48,6 +50,7 @@ function Materials() {
   const handleHideImg = () => {
     dispatch(hideImage());
     dispatch(showCardList());
+    dispatch(showSearch());
   };
 
   const handleSearch = (event) => {
@@ -69,6 +72,7 @@ function Materials() {
               placeholder="Type a name"
               value={search}
               onChange={handleSearch}
+              style={{ display: isSearchVisible ? 'inline' : 'none' }}
             />
           </div>
           <h3>82</h3>
