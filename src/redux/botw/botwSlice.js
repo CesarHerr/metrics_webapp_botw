@@ -9,7 +9,7 @@ import {
 } from './Api';
 
 const initialState = {
-  isLoading: false,
+  isLoading: true,
   cards: [],
   creatures: [],
   equipment: [],
